@@ -1,0 +1,16 @@
+[te/E5] 49043 docs, 300 queries, model=intfloat/multilingual-e5-small
+D:\Research Work2\.venv\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[te/E5] shard 1/12  120.3 p/s  ETA 6 min
+[te/E5] shard 2/12  98.7 p/s  ETA 7 min
+[te/E5] shard 3/12  81.7 p/s  ETA 7 min
+[te/E5] shard 4/12  69.0 p/s  ETA 8 min
+[te/E5] shard 5/12  58.6 p/s  ETA 8 min
+[te/E5] shard 6/12  49.6 p/s  ETA 8 min
+[te/E5] shard 7/12  42.2 p/s  ETA 8 min
+[te/E5] shard 8/12  36.4 p/s  ETA 7 min
+[te/E5] shard 9/12  31.8 p/s  ETA 6 min
+[te/E5] shard 10/12  27.4 p/s  ETA 5 min
+[te/E5] shard 11/12  22.9 p/s  ETA 3 min
+[te/E5] shard 12/12  19.9 p/s  ETA 0 min
+[te/E5] nDCG@10=0.9285 R@100=0.995 MRR@10=0.916  encode=41.4 min

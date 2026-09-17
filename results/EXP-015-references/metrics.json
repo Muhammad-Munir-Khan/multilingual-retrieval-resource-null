@@ -1,0 +1,206 @@
+{
+  "experiment_id": "EXP-015",
+  "purpose": "verify citation metadata against the arXiv API (primary), replacing SNIPPET-ONLY status",
+  "retrieved_utc": "2026-08-12T14:56:31.013200+00:00",
+  "git_commit": "f779544a9f8737721a1189362eab572dd6773e85",
+  "source": "http://export.arxiv.org/api/query \u2014 arXiv's own metadata service",
+  "arxiv_verified": {
+    "2210.09984": {
+      "status": "VERIFIED",
+      "title": "Making a MIRACL: Multilingual Information Retrieval Across a Continuum of Languages",
+      "authors": [
+        "Xinyu Zhang",
+        "Nandan Thakur",
+        "Odunayo Ogundepo",
+        "Ehsan Kamalloo",
+        "David Alfonso-Hermelo",
+        "Xiaoguang Li",
+        "Qun Liu",
+        "Mehdi Rezagholizadeh",
+        "Jimmy Lin"
+      ],
+      "n_authors": 9,
+      "published": "2022-10-18T16:47:18Z",
+      "updated": "2022-10-18T16:47:18Z",
+      "doi": null,
+      "comment": null,
+      "primary_category": "cs.IR",
+      "why_cited": "MIRACL benchmark \u2014 our dataset"
+    },
+    "2605.24556": {
+      "status": "VERIFIED",
+      "title": "The Multilingual Curse at the Retrieval Layer: Evidence from Amharic",
+      "authors": [
+        "Yosef Worku Alemneh",
+        "Kidist Amde Mekonnen",
+        "Maarten de Rijke"
+      ],
+      "n_authors": 3,
+      "published": "2026-05-23T12:44:30Z",
+      "updated": "2026-05-23T12:44:30Z",
+      "doi": null,
+      "comment": "10 pages, 4 tables. Accepted to the 1st Workshop on Multilinguality in the Era of Large Language Models (MeLLM) at ACL 2026",
+      "primary_category": "cs.IR",
+      "why_cited": "Amharic multilingual curse \u2014 closest prior work"
+    },
+    "2511.19324": {
+      "status": "VERIFIED",
+      "title": "What Drives Cross-lingual Ranking? Retrieval Approaches with Multilingual Language Models",
+      "authors": [
+        "Roksana Goworek",
+        "Olivia Macmillan-Scott",
+        "Eda B. \u00d6zyi\u011fit"
+      ],
+      "n_authors": 3,
+      "published": "2025-11-24T17:17:40Z",
+      "updated": "2025-11-24T17:17:40Z",
+      "doi": null,
+      "comment": null,
+      "primary_category": "cs.IR",
+      "why_cited": "What Drives Cross-lingual Ranking \u2014 adjacent CLIR analysis"
+    },
+    "2012.15613": {
+      "status": "VERIFIED",
+      "title": "How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models",
+      "authors": [
+        "Phillip Rust",
+        "Jonas Pfeiffer",
+        "Ivan Vuli\u0107",
+        "Sebastian Ruder",
+        "Iryna Gurevych"
+      ],
+      "n_authors": 5,
+      "published": "2020-12-31T14:11:00Z",
+      "updated": "2021-06-01T18:17:59Z",
+      "doi": null,
+      "comment": "ACL 2021",
+      "primary_category": "cs.CL",
+      "why_cited": "Rust et al., How Good is Your Tokenizer \u2014 the identification design we cannot run"
+    },
+    "1911.02116": {
+      "status": "VERIFIED",
+      "title": "Unsupervised Cross-lingual Representation Learning at Scale",
+      "authors": [
+        "Alexis Conneau",
+        "Kartikay Khandelwal",
+        "Naman Goyal",
+        "Vishrav Chaudhary",
+        "Guillaume Wenzek",
+        "Francisco Guzm\u00e1n",
+        "Edouard Grave",
+        "Myle Ott",
+        "Luke Zettlemoyer",
+        "Veselin Stoyanov"
+      ],
+      "n_authors": 10,
+      "published": "2019-11-05T22:42:00Z",
+      "updated": "2020-04-08T01:02:17Z",
+      "doi": null,
+      "comment": "ACL 2020 (+ updated results)",
+      "primary_category": "cs.CL",
+      "why_cited": "XLM-R / CC-100 \u2014 tokenizer and resource proxy"
+    },
+    "2402.05672": {
+      "status": "VERIFIED",
+      "title": "Multilingual E5 Text Embeddings: A Technical Report",
+      "authors": [
+        "Liang Wang",
+        "Nan Yang",
+        "Xiaolong Huang",
+        "Linjun Yang",
+        "Rangan Majumder",
+        "Furu Wei"
+      ],
+      "n_authors": 6,
+      "published": "2024-02-08T13:47:50Z",
+      "updated": "2024-02-08T13:47:50Z",
+      "doi": null,
+      "comment": "6 pages",
+      "primary_category": "cs.CL",
+      "why_cited": "multilingual-e5 \u2014 primary encoder"
+    },
+    "2007.01852": {
+      "status": "VERIFIED",
+      "title": "Language-agnostic BERT Sentence Embedding",
+      "authors": [
+        "Fangxiaoyu Feng",
+        "Yinfei Yang",
+        "Daniel Cer",
+        "Naveen Arivazhagan",
+        "Wei Wang"
+      ],
+      "n_authors": 5,
+      "published": "2020-07-03T17:58:42Z",
+      "updated": "2022-03-08T05:10:16Z",
+      "doi": null,
+      "comment": "To be presented at ACL 2022",
+      "primary_category": "cs.CL",
+      "why_cited": "LaBSE \u2014 coverage-anchor encoder"
+    },
+    "2510.09947": {
+      "status": "VERIFIED",
+      "title": "Beyond Fertility: Analyzing STRR as a Metric for Multilingual Tokenization Evaluation",
+      "authors": [
+        "Mir Tafseer Nayeem",
+        "Sawsan Alqahtani",
+        "Md Tahmid Rahman Laskar",
+        "Tasnim Mohiuddin",
+        "M Saiful Bari"
+      ],
+      "n_authors": 5,
+      "published": "2025-10-11T01:22:31Z",
+      "updated": "2025-10-26T01:32:06Z",
+      "doi": null,
+      "comment": "NeurIPS 2025 Workshop",
+      "primary_category": "cs.CL",
+      "why_cited": "STRR tokenization metric"
+    },
+    "2402.03216": {
+      "status": "VERIFIED",
+      "title": "M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation",
+      "authors": [
+        "Jianlv Chen",
+        "Shitao Xiao",
+        "Peitian Zhang",
+        "Kun Luo",
+        "Defu Lian",
+        "Zheng Liu"
+      ],
+      "n_authors": 6,
+      "published": "2024-02-05T17:26:49Z",
+      "updated": "2025-12-12T11:26:32Z",
+      "doi": null,
+      "comment": null,
+      "primary_category": "cs.CL",
+      "why_cited": "BGE-M3 \u2014 tokenizer-convergence evidence"
+    },
+    "2501.12835": {
+      "status": "VERIFIED",
+      "title": "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "authors": [
+        "Viktor Moskvoretskii",
+        "Maria Lysyuk",
+        "Mikhail Salnikov",
+        "Nikolay Ivanov",
+        "Sergey Pletenev",
+        "Daria Galimzianova",
+        "Nikita Krayko",
+        "Vasily Konovalov",
+        "Irina Nikishina",
+        "Alexander Panchenko"
+      ],
+      "n_authors": 10,
+      "published": "2025-01-22T12:21:17Z",
+      "updated": "2025-02-21T12:41:06Z",
+      "doi": null,
+      "comment": "The code and data are at https://github.com/s-nlp/AdaRAGUE",
+      "primary_category": "cs.CL",
+      "why_cited": "Moskvoretskii adaptive retrieval benchmark \u2014 retired direction, cited in framing"
+    }
+  },
+  "requires_manual_verification": {
+    "Robertson et al., Okapi at TREC-3 (1995)": "BM25 formulation \u2014 NIST TREC-3 proceedings",
+    "MIRACL TACL 2023 version": "doi 10.1162/tacl_a_00595 \u2014 verify against MIT Press page"
+  },
+  "note": "arXiv metadata confirms a preprint exists with the stated title, authors and date. It does NOT confirm peer-reviewed venue. Any claim that a work appeared at a specific conference or journal must be checked against that venue's own record before it goes in the bibliography."
+}

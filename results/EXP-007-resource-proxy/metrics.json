@@ -1,0 +1,49 @@
+{
+  "experiment_id": "EXP-007",
+  "purpose": "Pretraining-resource proxy per language, sourced not estimated (protocol §8)",
+  "retrieved_utc": "2026-08-11",
+  "source": {
+    "name": "CC-100 monolingual corpora",
+    "url": "https://data.statmt.org/cc-100/",
+    "role": "training corpus of XLM-R (Conneau et al. 2020), which supplies the tokenizer and pretrained base for encoder family A",
+    "verification": "VERIFIED - fetched from the official distribution page in-session",
+    "units": "compressed text size as published on the source page; converted to MB for ordering only"
+  },
+  "caveats": [
+    "This is a proxy for the BASE MODEL's pretraining volume, not for the full training pipeline of the sentence encoders. paraphrase-multilingual-MiniLM-L12-v2 is distilled using parallel data on top of an XLM-R initialisation, so CC-100 volume does not capture its distillation supervision. Must be stated in Limitations.",
+    "Applies to the XLM-R tokenizer family (models A, A2). The mBERT family (B, B2) was pretrained on Wikipedia, so a separate Wikipedia-size proxy is required for those. EVIDENCE REQUIRED.",
+    "MIRACL Chinese is Simplified, so zh-Hans (14G) is used; zh-Hant (5.3G) is recorded but not used.",
+    "Sizes are compressed bytes, not token counts. Compression ratio varies by script, so cross-script comparison of these values is approximate. Rank ordering is more defensible than absolute ratios."
+  ],
+  "languages": {
+    "yo": {"published": "1.1M", "mb": 1.1},
+    "sw": {"published": "332M", "mb": 332},
+    "te": {"published": "536M", "mb": 536},
+    "bn": {"published": "860M", "mb": 860},
+    "hi": {"published": "2.5G", "mb": 2560},
+    "ar": {"published": "5.4G", "mb": 5530},
+    "th": {"published": "8.7G", "mb": 8909},
+    "zh": {"published": "14G", "mb": 14336, "note": "zh-Hans; zh-Hant is 5.3G and unused"},
+    "es": {"published": "14G", "mb": 14336},
+    "fr": {"published": "14G", "mb": 14336},
+    "ko": {"published": "14G", "mb": 14336},
+    "fi": {"published": "15G", "mb": 15360},
+    "ja": {"published": "15G", "mb": 15360},
+    "de": {"published": "18G", "mb": 18432},
+    "fa": {"published": "20G", "mb": 20480},
+    "id": {"published": "36G", "mb": 36864},
+    "ru": {"published": "46G", "mb": 47104},
+    "en": {"published": "82G", "mb": 83968}
+  },
+  "observations": {
+    "spread_ratio_max_over_min": 76335,
+    "smallest": "yo (1.1M)",
+    "largest": "en (82G)",
+    "counterintuitive_orderings": [
+      "id (36G) exceeds es and fr (14G each), so 'low-resource' intuitions do not track CC-100 volume",
+      "fa (20G) exceeds de (18G)",
+      "th (8.7G) exceeds ar (5.4G)"
+    ],
+    "why_this_matters": "The proxy is a measured covariate with real, non-obvious variation rather than a restatement of which languages are assumed to be low-resource. That is what makes it usable as a predictor instead of a label."
+  }
+}

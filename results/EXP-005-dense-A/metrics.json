@@ -1,0 +1,27 @@
+{
+  "experiment_id": "EXP-005-dense-A",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "updated_utc": "2026-08-11T16:49:08.266822+00:00",
+  "git_commit": "72d8ecdeb1672700cd05e0da9c3805c00f53d904",
+  "languages": {
+    "yo": {
+      "lang": "yo",
+      "model_key": "A",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "n_queries": 119,
+      "n_docs": 49043,
+      "embedding_dim": 384,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.1482,
+        "recall@100": 0.3151,
+        "mrr@10": 0.1417
+      },
+      "timing": {
+        "encode_s": 1661.3,
+        "search_s": 0.1
+      }
+    }
+  }
+}

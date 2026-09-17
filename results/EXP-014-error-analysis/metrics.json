@@ -1,0 +1,1003 @@
+{
+  "experiment_id": "EXP-014",
+  "purpose": "failure categorisation and paired BM25->E5 transitions",
+  "updated_utc": "2026-08-13T09:39:47.986962+00:00",
+  "git_commit": "4bea6f4e87a6049df8b24fbb23c4b5837404a8e4",
+  "category_definitions": {
+    "total_miss": "Recall@100 == 0 \u2014 recall failure, not repairable by reranking",
+    "deep_miss": "Recall@100 > 0 and nDCG@10 == 0 \u2014 ordering failure, repairable",
+    "weak_rank": "nDCG@10 > 0 and MRR@10 < 1 \u2014 in top 10, not first",
+    "rank1": "MRR@10 == 1"
+  },
+  "per_system": {
+    "bm25": {
+      "ar": {
+        "n": 300,
+        "counts": {
+          "total_miss": 3,
+          "deep_miss": 23,
+          "weak_rank": 137,
+          "rank1": 137
+        },
+        "rates": {
+          "total_miss": 0.01,
+          "deep_miss": 0.0767,
+          "weak_rank": 0.4567,
+          "rank1": 0.4567
+        }
+      },
+      "bn": {
+        "n": 300,
+        "counts": {
+          "total_miss": 12,
+          "deep_miss": 32,
+          "weak_rank": 134,
+          "rank1": 122
+        },
+        "rates": {
+          "total_miss": 0.04,
+          "deep_miss": 0.1067,
+          "weak_rank": 0.4467,
+          "rank1": 0.4067
+        }
+      },
+      "de": {
+        "n": 300,
+        "counts": {
+          "total_miss": 15,
+          "deep_miss": 31,
+          "weak_rank": 158,
+          "rank1": 96
+        },
+        "rates": {
+          "total_miss": 0.05,
+          "deep_miss": 0.1033,
+          "weak_rank": 0.5267,
+          "rank1": 0.32
+        }
+      },
+      "en": {
+        "n": 300,
+        "counts": {
+          "total_miss": 6,
+          "deep_miss": 15,
+          "weak_rank": 160,
+          "rank1": 119
+        },
+        "rates": {
+          "total_miss": 0.02,
+          "deep_miss": 0.05,
+          "weak_rank": 0.5333,
+          "rank1": 0.3967
+        }
+      },
+      "es": {
+        "n": 300,
+        "counts": {
+          "total_miss": 6,
+          "deep_miss": 23,
+          "weak_rank": 110,
+          "rank1": 161
+        },
+        "rates": {
+          "total_miss": 0.02,
+          "deep_miss": 0.0767,
+          "weak_rank": 0.3667,
+          "rank1": 0.5367
+        }
+      },
+      "fa": {
+        "n": 300,
+        "counts": {
+          "total_miss": 19,
+          "deep_miss": 43,
+          "weak_rank": 132,
+          "rank1": 106
+        },
+        "rates": {
+          "total_miss": 0.0633,
+          "deep_miss": 0.1433,
+          "weak_rank": 0.44,
+          "rank1": 0.3533
+        }
+      },
+      "fi": {
+        "n": 300,
+        "counts": {
+          "total_miss": 7,
+          "deep_miss": 17,
+          "weak_rank": 98,
+          "rank1": 178
+        },
+        "rates": {
+          "total_miss": 0.0233,
+          "deep_miss": 0.0567,
+          "weak_rank": 0.3267,
+          "rank1": 0.5933
+        }
+      },
+      "fr": {
+        "n": 300,
+        "counts": {
+          "total_miss": 15,
+          "deep_miss": 49,
+          "weak_rank": 172,
+          "rank1": 64
+        },
+        "rates": {
+          "total_miss": 0.05,
+          "deep_miss": 0.1633,
+          "weak_rank": 0.5733,
+          "rank1": 0.2133
+        }
+      },
+      "hi": {
+        "n": 300,
+        "counts": {
+          "total_miss": 16,
+          "deep_miss": 49,
+          "weak_rank": 131,
+          "rank1": 104
+        },
+        "rates": {
+          "total_miss": 0.0533,
+          "deep_miss": 0.1633,
+          "weak_rank": 0.4367,
+          "rank1": 0.3467
+        }
+      },
+      "id": {
+        "n": 300,
+        "counts": {
+          "total_miss": 11,
+          "deep_miss": 32,
+          "weak_rank": 123,
+          "rank1": 134
+        },
+        "rates": {
+          "total_miss": 0.0367,
+          "deep_miss": 0.1067,
+          "weak_rank": 0.41,
+          "rank1": 0.4467
+        }
+      },
+      "ja": {
+        "n": 300,
+        "counts": {
+          "total_miss": 34,
+          "deep_miss": 33,
+          "weak_rank": 142,
+          "rank1": 91
+        },
+        "rates": {
+          "total_miss": 0.1133,
+          "deep_miss": 0.11,
+          "weak_rank": 0.4733,
+          "rank1": 0.3033
+        }
+      },
+      "ko": {
+        "n": 213,
+        "counts": {
+          "total_miss": 23,
+          "deep_miss": 39,
+          "weak_rank": 82,
+          "rank1": 69
+        },
+        "rates": {
+          "total_miss": 0.108,
+          "deep_miss": 0.1831,
+          "weak_rank": 0.385,
+          "rank1": 0.3239
+        }
+      },
+      "ru": {
+        "n": 300,
+        "counts": {
+          "total_miss": 21,
+          "deep_miss": 36,
+          "weak_rank": 115,
+          "rank1": 128
+        },
+        "rates": {
+          "total_miss": 0.07,
+          "deep_miss": 0.12,
+          "weak_rank": 0.3833,
+          "rank1": 0.4267
+        }
+      },
+      "sw": {
+        "n": 300,
+        "counts": {
+          "total_miss": 25,
+          "deep_miss": 50,
+          "weak_rank": 106,
+          "rank1": 119
+        },
+        "rates": {
+          "total_miss": 0.0833,
+          "deep_miss": 0.1667,
+          "weak_rank": 0.3533,
+          "rank1": 0.3967
+        }
+      },
+      "te": {
+        "n": 300,
+        "counts": {
+          "total_miss": 21,
+          "deep_miss": 38,
+          "weak_rank": 96,
+          "rank1": 145
+        },
+        "rates": {
+          "total_miss": 0.07,
+          "deep_miss": 0.1267,
+          "weak_rank": 0.32,
+          "rank1": 0.4833
+        }
+      },
+      "th": {
+        "n": 300,
+        "counts": {
+          "total_miss": 11,
+          "deep_miss": 44,
+          "weak_rank": 128,
+          "rank1": 117
+        },
+        "rates": {
+          "total_miss": 0.0367,
+          "deep_miss": 0.1467,
+          "weak_rank": 0.4267,
+          "rank1": 0.39
+        }
+      },
+      "yo": {
+        "n": 119,
+        "counts": {
+          "total_miss": 10,
+          "deep_miss": 21,
+          "weak_rank": 47,
+          "rank1": 41
+        },
+        "rates": {
+          "total_miss": 0.084,
+          "deep_miss": 0.1765,
+          "weak_rank": 0.395,
+          "rank1": 0.3445
+        }
+      },
+      "zh": {
+        "n": 300,
+        "counts": {
+          "total_miss": 154,
+          "deep_miss": 24,
+          "weak_rank": 84,
+          "rank1": 38
+        },
+        "rates": {
+          "total_miss": 0.5133,
+          "deep_miss": 0.08,
+          "weak_rank": 0.28,
+          "rank1": 0.1267
+        }
+      }
+    },
+    "E5": {
+      "ar": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 3,
+          "weak_rank": 61,
+          "rank1": 236
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.01,
+          "weak_rank": 0.2033,
+          "rank1": 0.7867
+        }
+      },
+      "bn": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 6,
+          "weak_rank": 103,
+          "rank1": 190
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.02,
+          "weak_rank": 0.3433,
+          "rank1": 0.6333
+        }
+      },
+      "de": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 4,
+          "weak_rank": 121,
+          "rank1": 174
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.0133,
+          "weak_rank": 0.4033,
+          "rank1": 0.58
+        }
+      },
+      "en": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 0,
+          "weak_rank": 95,
+          "rank1": 205
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.0,
+          "weak_rank": 0.3167,
+          "rank1": 0.6833
+        }
+      },
+      "es": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 1,
+          "weak_rank": 74,
+          "rank1": 225
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.0033,
+          "weak_rank": 0.2467,
+          "rank1": 0.75
+        }
+      },
+      "fa": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 12,
+          "weak_rank": 104,
+          "rank1": 183
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.04,
+          "weak_rank": 0.3467,
+          "rank1": 0.61
+        }
+      },
+      "fi": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 5,
+          "weak_rank": 53,
+          "rank1": 241
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.0167,
+          "weak_rank": 0.1767,
+          "rank1": 0.8033
+        }
+      },
+      "fr": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 6,
+          "weak_rank": 145,
+          "rank1": 149
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.02,
+          "weak_rank": 0.4833,
+          "rank1": 0.4967
+        }
+      },
+      "hi": {
+        "n": 300,
+        "counts": {
+          "total_miss": 4,
+          "deep_miss": 24,
+          "weak_rank": 116,
+          "rank1": 156
+        },
+        "rates": {
+          "total_miss": 0.0133,
+          "deep_miss": 0.08,
+          "weak_rank": 0.3867,
+          "rank1": 0.52
+        }
+      },
+      "id": {
+        "n": 300,
+        "counts": {
+          "total_miss": 3,
+          "deep_miss": 11,
+          "weak_rank": 76,
+          "rank1": 210
+        },
+        "rates": {
+          "total_miss": 0.01,
+          "deep_miss": 0.0367,
+          "weak_rank": 0.2533,
+          "rank1": 0.7
+        }
+      },
+      "ja": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 2,
+          "weak_rank": 105,
+          "rank1": 193
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.0067,
+          "weak_rank": 0.35,
+          "rank1": 0.6433
+        }
+      },
+      "ko": {
+        "n": 213,
+        "counts": {
+          "total_miss": 3,
+          "deep_miss": 6,
+          "weak_rank": 57,
+          "rank1": 147
+        },
+        "rates": {
+          "total_miss": 0.0141,
+          "deep_miss": 0.0282,
+          "weak_rank": 0.2676,
+          "rank1": 0.6901
+        }
+      },
+      "ru": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 8,
+          "weak_rank": 79,
+          "rank1": 212
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.0267,
+          "weak_rank": 0.2633,
+          "rank1": 0.7067
+        }
+      },
+      "sw": {
+        "n": 300,
+        "counts": {
+          "total_miss": 10,
+          "deep_miss": 11,
+          "weak_rank": 74,
+          "rank1": 205
+        },
+        "rates": {
+          "total_miss": 0.0333,
+          "deep_miss": 0.0367,
+          "weak_rank": 0.2467,
+          "rank1": 0.6833
+        }
+      },
+      "te": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 7,
+          "weak_rank": 29,
+          "rank1": 263
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.0233,
+          "weak_rank": 0.0967,
+          "rank1": 0.8767
+        }
+      },
+      "th": {
+        "n": 300,
+        "counts": {
+          "total_miss": 0,
+          "deep_miss": 4,
+          "weak_rank": 67,
+          "rank1": 229
+        },
+        "rates": {
+          "total_miss": 0.0,
+          "deep_miss": 0.0133,
+          "weak_rank": 0.2233,
+          "rank1": 0.7633
+        }
+      },
+      "yo": {
+        "n": 119,
+        "counts": {
+          "total_miss": 25,
+          "deep_miss": 16,
+          "weak_rank": 47,
+          "rank1": 31
+        },
+        "rates": {
+          "total_miss": 0.2101,
+          "deep_miss": 0.1345,
+          "weak_rank": 0.395,
+          "rank1": 0.2605
+        }
+      },
+      "zh": {
+        "n": 300,
+        "counts": {
+          "total_miss": 1,
+          "deep_miss": 6,
+          "weak_rank": 139,
+          "rank1": 154
+        },
+        "rates": {
+          "total_miss": 0.0033,
+          "deep_miss": 0.02,
+          "weak_rank": 0.4633,
+          "rank1": 0.5133
+        }
+      }
+    },
+    "LaBSE": {
+      "sw": {
+        "n": 300,
+        "counts": {
+          "total_miss": 70,
+          "deep_miss": 67,
+          "weak_rank": 102,
+          "rank1": 61
+        },
+        "rates": {
+          "total_miss": 0.2333,
+          "deep_miss": 0.2233,
+          "weak_rank": 0.34,
+          "rank1": 0.2033
+        }
+      },
+      "te": {
+        "n": 300,
+        "counts": {
+          "total_miss": 124,
+          "deep_miss": 77,
+          "weak_rank": 61,
+          "rank1": 38
+        },
+        "rates": {
+          "total_miss": 0.4133,
+          "deep_miss": 0.2567,
+          "weak_rank": 0.2033,
+          "rank1": 0.1267
+        }
+      },
+      "yo": {
+        "n": 119,
+        "counts": {
+          "total_miss": 48,
+          "deep_miss": 28,
+          "weak_rank": 29,
+          "rank1": 14
+        },
+        "rates": {
+          "total_miss": 0.4034,
+          "deep_miss": 0.2353,
+          "weak_rank": 0.2437,
+          "rank1": 0.1176
+        }
+      }
+    }
+  },
+  "bm25_to_E5_transitions": {
+    "ar": {
+      "n": 300,
+      "rescued_by_dense": 24,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.08,
+      "broken_rate": 0.0033,
+      "net_rate": 0.0767,
+      "transitions": {
+        "rank1->rank1": 126,
+        "weak_rank->rank1": 100,
+        "weak_rank->weak_rank": 36,
+        "deep_miss->weak_rank": 12,
+        "rank1->weak_rank": 11,
+        "deep_miss->rank1": 9,
+        "total_miss->weak_rank": 2,
+        "deep_miss->deep_miss": 2,
+        "total_miss->rank1": 1,
+        "weak_rank->deep_miss": 1
+      }
+    },
+    "bn": {
+      "n": 300,
+      "rescued_by_dense": 41,
+      "broken_by_dense": 4,
+      "rescued_rate": 0.1367,
+      "broken_rate": 0.0133,
+      "net_rate": 0.1233,
+      "transitions": {
+        "rank1->rank1": 93,
+        "weak_rank->rank1": 80,
+        "weak_rank->weak_rank": 51,
+        "rank1->weak_rank": 28,
+        "deep_miss->weak_rank": 16,
+        "deep_miss->rank1": 15,
+        "total_miss->weak_rank": 8,
+        "total_miss->rank1": 2,
+        "weak_rank->deep_miss": 2,
+        "total_miss->deep_miss": 2,
+        "rank1->deep_miss": 1,
+        "deep_miss->deep_miss": 1,
+        "weak_rank->total_miss": 1
+      }
+    },
+    "de": {
+      "n": 300,
+      "rescued_by_dense": 42,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.14,
+      "broken_rate": 0.0033,
+      "net_rate": 0.1367,
+      "transitions": {
+        "weak_rank->rank1": 81,
+        "weak_rank->weak_rank": 76,
+        "rank1->rank1": 69,
+        "rank1->weak_rank": 27,
+        "deep_miss->rank1": 19,
+        "deep_miss->weak_rank": 11,
+        "total_miss->weak_rank": 7,
+        "total_miss->rank1": 5,
+        "total_miss->deep_miss": 2,
+        "weak_rank->deep_miss": 1,
+        "deep_miss->deep_miss": 1,
+        "total_miss->total_miss": 1
+      }
+    },
+    "en": {
+      "n": 300,
+      "rescued_by_dense": 21,
+      "broken_by_dense": 0,
+      "rescued_rate": 0.07,
+      "broken_rate": 0.0,
+      "net_rate": 0.07,
+      "transitions": {
+        "weak_rank->rank1": 99,
+        "rank1->rank1": 95,
+        "weak_rank->weak_rank": 61,
+        "rank1->weak_rank": 24,
+        "deep_miss->weak_rank": 8,
+        "deep_miss->rank1": 7,
+        "total_miss->rank1": 4,
+        "total_miss->weak_rank": 2
+      }
+    },
+    "es": {
+      "n": 300,
+      "rescued_by_dense": 29,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.0967,
+      "broken_rate": 0.0033,
+      "net_rate": 0.0933,
+      "transitions": {
+        "rank1->rank1": 139,
+        "weak_rank->rank1": 70,
+        "weak_rank->weak_rank": 39,
+        "rank1->weak_rank": 22,
+        "deep_miss->rank1": 12,
+        "deep_miss->weak_rank": 11,
+        "total_miss->rank1": 4,
+        "total_miss->weak_rank": 2,
+        "weak_rank->deep_miss": 1
+      }
+    },
+    "fa": {
+      "n": 300,
+      "rescued_by_dense": 52,
+      "broken_by_dense": 3,
+      "rescued_rate": 0.1733,
+      "broken_rate": 0.01,
+      "net_rate": 0.1633,
+      "transitions": {
+        "rank1->rank1": 83,
+        "weak_rank->rank1": 77,
+        "weak_rank->weak_rank": 52,
+        "rank1->weak_rank": 23,
+        "deep_miss->weak_rank": 21,
+        "deep_miss->rank1": 15,
+        "total_miss->rank1": 8,
+        "total_miss->weak_rank": 8,
+        "deep_miss->deep_miss": 7,
+        "weak_rank->deep_miss": 3,
+        "total_miss->deep_miss": 2,
+        "total_miss->total_miss": 1
+      }
+    },
+    "fi": {
+      "n": 300,
+      "rescued_by_dense": 22,
+      "broken_by_dense": 4,
+      "rescued_rate": 0.0733,
+      "broken_rate": 0.0133,
+      "net_rate": 0.06,
+      "transitions": {
+        "rank1->rank1": 159,
+        "weak_rank->rank1": 68,
+        "weak_rank->weak_rank": 27,
+        "rank1->weak_rank": 18,
+        "deep_miss->rank1": 8,
+        "deep_miss->weak_rank": 7,
+        "total_miss->rank1": 6,
+        "weak_rank->deep_miss": 3,
+        "total_miss->weak_rank": 1,
+        "deep_miss->total_miss": 1,
+        "deep_miss->deep_miss": 1,
+        "rank1->deep_miss": 1
+      }
+    },
+    "fr": {
+      "n": 300,
+      "rescued_by_dense": 59,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.1967,
+      "broken_rate": 0.0033,
+      "net_rate": 0.1933,
+      "transitions": {
+        "weak_rank->weak_rank": 93,
+        "weak_rank->rank1": 78,
+        "rank1->rank1": 49,
+        "deep_miss->weak_rank": 26,
+        "deep_miss->rank1": 19,
+        "rank1->weak_rank": 15,
+        "total_miss->weak_rank": 11,
+        "deep_miss->deep_miss": 4,
+        "total_miss->rank1": 3,
+        "weak_rank->deep_miss": 1,
+        "total_miss->deep_miss": 1
+      }
+    },
+    "hi": {
+      "n": 300,
+      "rescued_by_dense": 46,
+      "broken_by_dense": 9,
+      "rescued_rate": 0.1533,
+      "broken_rate": 0.03,
+      "net_rate": 0.1233,
+      "transitions": {
+        "rank1->rank1": 74,
+        "weak_rank->weak_rank": 68,
+        "weak_rank->rank1": 58,
+        "rank1->weak_rank": 26,
+        "deep_miss->rank1": 19,
+        "deep_miss->weak_rank": 17,
+        "deep_miss->deep_miss": 11,
+        "total_miss->deep_miss": 6,
+        "total_miss->rank1": 5,
+        "total_miss->weak_rank": 5,
+        "weak_rank->deep_miss": 4,
+        "rank1->deep_miss": 3,
+        "deep_miss->total_miss": 2,
+        "weak_rank->total_miss": 1,
+        "rank1->total_miss": 1
+      }
+    },
+    "id": {
+      "n": 300,
+      "rescued_by_dense": 33,
+      "broken_by_dense": 4,
+      "rescued_rate": 0.11,
+      "broken_rate": 0.0133,
+      "net_rate": 0.0967,
+      "transitions": {
+        "rank1->rank1": 113,
+        "weak_rank->rank1": 76,
+        "weak_rank->weak_rank": 43,
+        "rank1->weak_rank": 21,
+        "deep_miss->rank1": 16,
+        "deep_miss->weak_rank": 10,
+        "total_miss->rank1": 5,
+        "deep_miss->deep_miss": 4,
+        "weak_rank->deep_miss": 4,
+        "total_miss->deep_miss": 3,
+        "total_miss->weak_rank": 2,
+        "deep_miss->total_miss": 2,
+        "total_miss->total_miss": 1
+      }
+    },
+    "ja": {
+      "n": 300,
+      "rescued_by_dense": 66,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.22,
+      "broken_rate": 0.0033,
+      "net_rate": 0.2167,
+      "transitions": {
+        "weak_rank->rank1": 86,
+        "rank1->rank1": 74,
+        "weak_rank->weak_rank": 55,
+        "deep_miss->weak_rank": 18,
+        "total_miss->rank1": 18,
+        "rank1->weak_rank": 17,
+        "deep_miss->rank1": 15,
+        "total_miss->weak_rank": 15,
+        "total_miss->deep_miss": 1,
+        "weak_rank->deep_miss": 1
+      }
+    },
+    "ko": {
+      "n": 213,
+      "rescued_by_dense": 56,
+      "broken_by_dense": 3,
+      "rescued_rate": 0.2629,
+      "broken_rate": 0.0141,
+      "net_rate": 0.2488,
+      "transitions": {
+        "rank1->rank1": 59,
+        "weak_rank->rank1": 57,
+        "weak_rank->weak_rank": 22,
+        "deep_miss->rank1": 20,
+        "deep_miss->weak_rank": 17,
+        "total_miss->rank1": 11,
+        "rank1->weak_rank": 10,
+        "total_miss->weak_rank": 8,
+        "total_miss->total_miss": 3,
+        "weak_rank->deep_miss": 3,
+        "deep_miss->deep_miss": 2,
+        "total_miss->deep_miss": 1
+      }
+    },
+    "ru": {
+      "n": 300,
+      "rescued_by_dense": 50,
+      "broken_by_dense": 2,
+      "rescued_rate": 0.1667,
+      "broken_rate": 0.0067,
+      "net_rate": 0.16,
+      "transitions": {
+        "rank1->rank1": 111,
+        "weak_rank->rank1": 78,
+        "weak_rank->weak_rank": 35,
+        "deep_miss->weak_rank": 20,
+        "rank1->weak_rank": 17,
+        "deep_miss->rank1": 13,
+        "total_miss->rank1": 10,
+        "total_miss->weak_rank": 7,
+        "deep_miss->deep_miss": 3,
+        "total_miss->deep_miss": 3,
+        "weak_rank->deep_miss": 2,
+        "total_miss->total_miss": 1
+      }
+    },
+    "sw": {
+      "n": 300,
+      "rescued_by_dense": 62,
+      "broken_by_dense": 8,
+      "rescued_rate": 0.2067,
+      "broken_rate": 0.0267,
+      "net_rate": 0.18,
+      "transitions": {
+        "rank1->rank1": 102,
+        "weak_rank->rank1": 65,
+        "weak_rank->weak_rank": 38,
+        "deep_miss->rank1": 29,
+        "deep_miss->weak_rank": 15,
+        "rank1->weak_rank": 12,
+        "total_miss->weak_rank": 9,
+        "total_miss->rank1": 9,
+        "deep_miss->total_miss": 5,
+        "total_miss->deep_miss": 4,
+        "rank1->deep_miss": 4,
+        "total_miss->total_miss": 3,
+        "weak_rank->deep_miss": 2,
+        "weak_rank->total_miss": 1,
+        "deep_miss->deep_miss": 1,
+        "rank1->total_miss": 1
+      }
+    },
+    "te": {
+      "n": 300,
+      "rescued_by_dense": 52,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.1733,
+      "broken_rate": 0.0033,
+      "net_rate": 0.17,
+      "transitions": {
+        "rank1->rank1": 136,
+        "weak_rank->rank1": 82,
+        "deep_miss->rank1": 32,
+        "total_miss->rank1": 13,
+        "weak_rank->weak_rank": 13,
+        "rank1->weak_rank": 9,
+        "total_miss->deep_miss": 4,
+        "deep_miss->weak_rank": 4,
+        "total_miss->weak_rank": 3,
+        "deep_miss->deep_miss": 2,
+        "weak_rank->deep_miss": 1,
+        "total_miss->total_miss": 1
+      }
+    },
+    "th": {
+      "n": 300,
+      "rescued_by_dense": 52,
+      "broken_by_dense": 1,
+      "rescued_rate": 0.1733,
+      "broken_rate": 0.0033,
+      "net_rate": 0.17,
+      "transitions": {
+        "rank1->rank1": 102,
+        "weak_rank->rank1": 98,
+        "weak_rank->weak_rank": 30,
+        "deep_miss->rank1": 26,
+        "deep_miss->weak_rank": 18,
+        "rank1->weak_rank": 14,
+        "total_miss->weak_rank": 5,
+        "total_miss->rank1": 3,
+        "total_miss->deep_miss": 3,
+        "rank1->deep_miss": 1
+      }
+    },
+    "yo": {
+      "n": 119,
+      "rescued_by_dense": 17,
+      "broken_by_dense": 27,
+      "rescued_rate": 0.1429,
+      "broken_rate": 0.2269,
+      "net_rate": -0.084,
+      "transitions": {
+        "weak_rank->weak_rank": 22,
+        "rank1->rank1": 14,
+        "weak_rank->rank1": 13,
+        "rank1->weak_rank": 12,
+        "deep_miss->weak_rank": 12,
+        "weak_rank->total_miss": 9,
+        "rank1->deep_miss": 8,
+        "rank1->total_miss": 7,
+        "deep_miss->total_miss": 5,
+        "total_miss->total_miss": 4,
+        "total_miss->deep_miss": 3,
+        "weak_rank->deep_miss": 3,
+        "deep_miss->rank1": 2,
+        "deep_miss->deep_miss": 2,
+        "total_miss->rank1": 2,
+        "total_miss->weak_rank": 1
+      }
+    },
+    "zh": {
+      "n": 300,
+      "rescued_by_dense": 174,
+      "broken_by_dense": 3,
+      "rescued_rate": 0.58,
+      "broken_rate": 0.01,
+      "net_rate": 0.57,
+      "transitions": {
+        "total_miss->weak_rank": 79,
+        "total_miss->rank1": 73,
+        "weak_rank->rank1": 46,
+        "weak_rank->weak_rank": 37,
+        "rank1->rank1": 23,
+        "rank1->weak_rank": 13,
+        "deep_miss->rank1": 12,
+        "deep_miss->weak_rank": 10,
+        "deep_miss->deep_miss": 2,
+        "total_miss->deep_miss": 2,
+        "rank1->deep_miss": 1,
+        "rank1->total_miss": 1,
+        "weak_rank->deep_miss": 1
+      }
+    }
+  }
+}

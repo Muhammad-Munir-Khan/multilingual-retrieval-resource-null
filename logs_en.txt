@@ -1,0 +1,5 @@
+=== BGEM3 en 09:12 ===
+[en/BGEM3] shard 11/12  3.3 p/s  ETA 20 min
+[en/BGEM3] shard 12/12  2.8 p/s  ETA 0 min
+[en/BGEM3] nDCG@10=0.7691 R@100=0.9938 MRR@10=0.7883  encode=297.1 min  [COVERAGE UNDETERMINED - ISSUE-010]
+S2 COMPLETE 14:10

@@ -1,0 +1,127 @@
+{
+  "experiment_id": "EXP-020",
+  "purpose": "export derived values that appear in the manuscript but were computed inline and never persisted (found by verify_numbers.py)",
+  "updated_utc": "2026-08-13T09:39:48.334616+00:00",
+  "git_commit": "4bea6f4e87a6049df8b24fbb23c4b5837404a8e4",
+  "differential_pool_exposure": {
+    "definition": "dense mean unjudged@10 minus lexical mean unjudged@10",
+    "per_language": {
+      "ar": {
+        "bm25_unjudged_top10": 4.333,
+        "dense_unjudged_top10": 2.72,
+        "differential": -1.613
+      },
+      "bn": {
+        "bm25_unjudged_top10": 5.17,
+        "dense_unjudged_top10": 3.917,
+        "differential": -1.253
+      },
+      "de": {
+        "bm25_unjudged_top10": 4.093,
+        "dense_unjudged_top10": 1.72,
+        "differential": -2.373
+      },
+      "en": {
+        "bm25_unjudged_top10": 1.997,
+        "dense_unjudged_top10": 1.667,
+        "differential": -0.33
+      },
+      "es": {
+        "bm25_unjudged_top10": 3.643,
+        "dense_unjudged_top10": 1.487,
+        "differential": -2.156
+      },
+      "fa": {
+        "bm25_unjudged_top10": 5.137,
+        "dense_unjudged_top10": 2.917,
+        "differential": -2.22
+      },
+      "fi": {
+        "bm25_unjudged_top10": 4.397,
+        "dense_unjudged_top10": 3.293,
+        "differential": -1.104
+      },
+      "fr": {
+        "bm25_unjudged_top10": 3.383,
+        "dense_unjudged_top10": 1.39,
+        "differential": -1.993
+      },
+      "hi": {
+        "bm25_unjudged_top10": 5.233,
+        "dense_unjudged_top10": 4.14,
+        "differential": -1.093
+      },
+      "id": {
+        "bm25_unjudged_top10": 5.0,
+        "dense_unjudged_top10": 3.61,
+        "differential": -1.39
+      },
+      "ja": {
+        "bm25_unjudged_top10": 5.143,
+        "dense_unjudged_top10": 2.057,
+        "differential": -3.086
+      },
+      "ko": {
+        "bm25_unjudged_top10": 5.211,
+        "dense_unjudged_top10": 2.366,
+        "differential": -2.845
+      },
+      "ru": {
+        "bm25_unjudged_top10": 4.423,
+        "dense_unjudged_top10": 1.793,
+        "differential": -2.63
+      },
+      "sw": {
+        "bm25_unjudged_top10": 7.147,
+        "dense_unjudged_top10": 6.193,
+        "differential": -0.954
+      },
+      "te": {
+        "bm25_unjudged_top10": 9.013,
+        "dense_unjudged_top10": 8.663,
+        "differential": -0.35
+      },
+      "th": {
+        "bm25_unjudged_top10": 5.017,
+        "dense_unjudged_top10": 3.92,
+        "differential": -1.097
+      },
+      "zh": {
+        "bm25_unjudged_top10": 7.05,
+        "dense_unjudged_top10": 2.247,
+        "differential": -4.803
+      }
+    },
+    "mean": -1.8406,
+    "min": -4.803,
+    "max": -0.33,
+    "n_languages_dense_higher": 0,
+    "n_languages": 17
+  },
+  "robustness_pooling": {
+    "all_supported": {
+      "k": 17,
+      "pooled": 0.2627,
+      "ci95_low": 0.224,
+      "ci95_high": 0.3013,
+      "I2_percent": 94.0,
+      "tau2": 0.0062
+    },
+    "excluding_zh": {
+      "k": 16,
+      "pooled": 0.2464,
+      "ci95_low": 0.2201,
+      "ci95_high": 0.2726,
+      "I2_percent": 86.4,
+      "tau2": 0.00247
+    },
+    "excluding_zh_ko_ja": {
+      "k": 14,
+      "pooled": 0.2348,
+      "ci95_low": 0.2101,
+      "ci95_high": 0.2594,
+      "I2_percent": 82.9,
+      "tau2": 0.00183
+    }
+  }
+}

@@ -1,0 +1,55 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Model / dataset caches — large, and reproducible from configs
+.cache/
+data/raw/
+data/cache/
+*.safetensors
+*.bin
+
+# Built sub-corpora: ~3-4 MB each, 18 languages. Deliberately not committed —
+# they regenerate deterministically from the pre-registered seed, and each one's
+# manifest.json carries a SHA-256 of its document-ID list so any rebuild can be
+# verified byte-for-byte against the registered sample. Manifests, queries and
+# qrels ARE committed.
+data/processed/**/subcorpus.jsonl.gz
+
+# Experiment scratch. NOTE: results/ is deliberately NOT ignored — the
+# experiment artifact policy requires committed, traceable result files.
+logs/*.tmp
+*.log.tmp
+
+# Dense embeddings: ~75 MB per (model, language), regenerable from the pinned
+# model + committed sub-corpus hash. Metrics and per-query scores ARE committed.
+data/embeddings/
+
+# Local tooling scratch state — not research content.
+.claude-flow/
+.claude/
+
+# Manuscript-editing working directory (AI-writing audit, venue-format
+# drafts for IJACSA/IJIMAI, and a redistributed copy of IJIMAI's own
+# copyrighted template assets). This is editorial process material, not
+# part of the pipeline/data/protocol the paper's Data Statement points to —
+# docs/ carries the actual pre-registration record and stays committed.
+research_editing/
+
+# Stray build artifacts from compiling LaTeX at the repo root by mistake
+# (the paper's own build junk is handled by paper/.gitignore).
+*.aux
+*.out
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+texput.*
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+docs/manuscript.docx

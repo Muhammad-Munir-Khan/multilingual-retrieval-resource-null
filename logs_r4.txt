@@ -1,0 +1,7 @@
+=== BGEM3 yo 21:06 ===
+[yo/BGEM3] nDCG@10=0.7074 R@100=0.9594 MRR@10=0.6758  encode=220.3 min
+=== BGEM3 sw 00:47 ===
+[sw/BGEM3] nDCG@10=0.7778 R@100=0.9648 MRR@10=0.7992  encode=172.8 min
+=== BGEM3 te 03:41 ===
+[te/BGEM3] nDCG@10=0.9162 R@100=0.9967 MRR@10=0.8991  encode=321.4 min
+=== BGEM3 hi 09:03 ===

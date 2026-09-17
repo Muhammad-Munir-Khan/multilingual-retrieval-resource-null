@@ -1,0 +1,67 @@
+{
+  "experiment_id": "EXP-012",
+  "purpose": "measure tokenizer diversity among multilingual encoders; decides feasibility of the Amendment 1 tokenizer arm",
+  "retrieved_utc": "2026-08-12T12:07:56.986519+00:00",
+  "git_commit": "7b9ed48ef0217bb44939e4f784bdd2ee2a1c5777",
+  "models": {
+    "BAAI/bge-m3": {
+      "vocab_size": 250002,
+      "model_type": "xlm-roberta",
+      "task": "retrieval"
+    },
+    "Alibaba-NLP/gte-multilingual-base": {
+      "vocab_size": 250048,
+      "model_type": "new",
+      "task": "retrieval"
+    },
+    "Snowflake/snowflake-arctic-embed-l-v2.0": {
+      "vocab_size": 250002,
+      "model_type": "xlm-roberta",
+      "task": "retrieval"
+    },
+    "jinaai/jina-embeddings-v3": {
+      "vocab_size": 250002,
+      "model_type": null,
+      "task": "retrieval"
+    },
+    "intfloat/multilingual-e5-base": {
+      "vocab_size": 250002,
+      "model_type": "xlm-roberta",
+      "task": "retrieval"
+    },
+    "intfloat/multilingual-e5-large": {
+      "vocab_size": 250002,
+      "model_type": "xlm-roberta",
+      "task": "retrieval"
+    },
+    "intfloat/multilingual-e5-small": {
+      "vocab_size": 250037,
+      "model_type": "bert",
+      "task": "retrieval"
+    },
+    "sentence-transformers/LaBSE": {
+      "vocab_size": 501153,
+      "model_type": "bert",
+      "task": "bitext/similarity"
+    },
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": {
+      "vocab_size": 250037,
+      "model_type": "bert",
+      "task": "paraphrase/STS"
+    },
+    "sentence-transformers/distiluse-base-multilingual-cased-v2": {
+      "vocab_size": 119547,
+      "model_type": "distilbert",
+      "task": "paraphrase/STS"
+    }
+  },
+  "finding": {
+    "retrieval_trained_vocab_sizes": [
+      250002,
+      250037,
+      250048
+    ],
+    "observation": "Every retrieval-trained multilingual encoder surveyed uses an XLM-R-derived vocabulary of ~250k. The only substantially different tokenizer (LaBSE, 501,153) belongs to a bitext/similarity model that loses to BM25 in our measurements (ISSUE-009).",
+    "consequence": "Tokenizer cannot be varied while holding training objective constant using publicly available multilingual retrievers. The Amendment 1 difference-in-differences is therefore not identifiable with available models, and would instead measure training-objective differences."
+  }
+}

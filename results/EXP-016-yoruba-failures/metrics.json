@@ -1,0 +1,39 @@
+{
+  "experiment_id": "EXP-016",
+  "purpose": "R7 - probe why E5 fails on Yoruba; test whether fragmentation explains it",
+  "n_queries": 119,
+  "groups": {
+    "e5_broke_bm25_hit": {
+      "n": 27,
+      "mean_q_words": 8.3,
+      "mean_q_chars": 38.5,
+      "mean_tokens_per_word": 2.028,
+      "mean_n_positives": 1.48
+    },
+    "e5_rescued": {
+      "n": 17,
+      "mean_q_words": 6.6,
+      "mean_q_chars": 33.9,
+      "mean_tokens_per_word": 1.979,
+      "mean_n_positives": 1.06
+    },
+    "both_hit": {
+      "n": 61,
+      "mean_q_words": 7.7,
+      "mean_q_chars": 37.5,
+      "mean_tokens_per_word": 1.93,
+      "mean_n_positives": 1.16
+    },
+    "both_miss": {
+      "n": 14,
+      "mean_q_words": 9.1,
+      "mean_q_chars": 41.5,
+      "mean_tokens_per_word": 1.858,
+      "mean_n_positives": 1.07
+    }
+  },
+  "all_query_mean_fertility": 1.951,
+  "finding_1_negative": "Fragmentation does NOT explain which queries E5 breaks. The broken group's fertility (2.028) is barely above the all-query mean (1.951), and the queries BOTH systems miss have the LOWEST fertility (1.858). A tokenization account of Yoruba's failure is not supported at the query level.",
+  "finding_2_qualitative": "The broken queries are predominantly entity-centric factoid questions. Proper nouns are identifiable without fluency (Poland, Dick Tiger, Balkani, Namadi Sambo, Kaduna). Consistent with lexical matching succeeding on rare named entities where an encoder that does not declare the language has no reliable representation.",
+  "limitation": "The author has no Yoruba fluency and no annotator access. Proper nouns can be identified without fluency, but no semantic or morphological judgement of these queries is made, and none should be inferred from this analysis."
+}

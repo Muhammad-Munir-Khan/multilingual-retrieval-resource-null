@@ -1,0 +1,73 @@
+{
+  "experiment_id": "EXP-000",
+  "purpose": "measure CPU throughput to fix feasible experiment scale",
+  "hypothesis_tested": null,
+  "environment": {
+    "timestamp_utc": "2026-08-11T13:02:40.439040+00:00",
+    "git_commit": "18880f008ac4fb8cb4dc0070f618f2283354b68e",
+    "python": "3.11.0",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "machine": "AMD64",
+    "cpu_count_logical": 8,
+    "torch_version": "2.1.0+cpu",
+    "transformers_version": "4.36.2",
+    "sentence_transformers_version": "NOT_INSTALLED",
+    "datasets_version": "NOT_INSTALLED",
+    "rank_bm25_version": "unknown",
+    "torch_threads": 4,
+    "cuda_available": false
+  },
+  "config": {
+    "n_passages": 1500,
+    "synth_words_per_passage": 90,
+    "batch_size": 16,
+    "models": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    ]
+  },
+  "bm25": {
+    "n_passages": 1500,
+    "index_build_s": 0.032,
+    "passages_per_s_index": 46996.5,
+    "n_queries": 50,
+    "total_query_s": 0.084,
+    "queries_per_s": 592.59,
+    "ms_per_query": 1.69
+  },
+  "encoders": [
+    {
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "embedding_dim": 384,
+      "n_params_millions": 117.7,
+      "max_seq_len_used": 256,
+      "load_s": 155.06,
+      "batch_size": 16,
+      "n_encoded_per_rep": 256,
+      "reps": 3,
+      "median_s": 27.045,
+      "best_s": 23.948,
+      "passages_per_s_median": 9.47,
+      "passages_per_s_best": 10.69
+    }
+  ],
+  "projection_note": "PROJECTION ONLY, not measured. Corpus sizes below are UNVERIFIED and must be replaced with counts read from the actual MIRACL corpora.",
+  "projected_encoding_time": {
+    "yo_UNVERIFIED": {
+      "corpus_passages": 49000,
+      "projected_hours": 1.44
+    },
+    "sw_UNVERIFIED": {
+      "corpus_passages": 132000,
+      "projected_hours": 3.87
+    },
+    "bn_UNVERIFIED": {
+      "corpus_passages": 297000,
+      "projected_hours": 8.71
+    },
+    "te_UNVERIFIED": {
+      "corpus_passages": 518000,
+      "projected_hours": 15.19
+    }
+  }
+}

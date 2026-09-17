@@ -1,0 +1,18 @@
+{
+  "lang": "zh",
+  "built_utc": "2026-08-11T15:21:46.006710+00:00",
+  "git_commit": "bafa296657ba942feaa932a783aa134406db8b29",
+  "seed": 20260811,
+  "q_max": 300,
+  "n_target": 49043,
+  "n_actual": 49043,
+  "n_queries": 300,
+  "n_judged_docs_expected": 2926,
+  "n_judged_docs_found": 2926,
+  "n_judged_docs_missing": 0,
+  "missing_judged_sample": [],
+  "judged_fraction": 0.0597,
+  "corpus_total_docs_streamed": 4934368,
+  "corpus_shards": 10,
+  "docid_sha256": "79f81862e86d3d8640ac80182739710b2535d32f978e5074adee7a2e2fd9e648"
+}

@@ -1,0 +1,92 @@
+{
+  "experiment_id": "EXP-005-dense-LaBSE",
+  "model": "sentence-transformers/LaBSE",
+  "updated_utc": "2026-08-12T13:38:27.477699+00:00",
+  "git_commit": "987218bb47fa7ab66ebbb8aba1e47454660ca739",
+  "languages": {
+    "yo": {
+      "lang": "yo",
+      "model_key": "LaBSE",
+      "model": "sentence-transformers/LaBSE",
+      "declares_language_support": true,
+      "coverage_confounded": false,
+      "declared_languages": 110,
+      "tokenizer_family": "LaBSE-501k",
+      "model_task": "bitext/similarity",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 119,
+      "n_docs": 49043,
+      "embedding_dim": 768,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.229,
+        "recall@100": 0.5651,
+        "mrr@10": 0.1951,
+        "mean_unjudged_in_top10": 9.151,
+        "mean_unjudged_in_top100": 98.11
+      },
+      "timing": {
+        "encode_s": 4111.5,
+        "search_s": 0.17
+      }
+    },
+    "sw": {
+      "lang": "sw",
+      "model_key": "LaBSE",
+      "model": "sentence-transformers/LaBSE",
+      "declares_language_support": true,
+      "coverage_confounded": false,
+      "declared_languages": 110,
+      "tokenizer_family": "LaBSE-501k",
+      "model_task": "bitext/similarity",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 768,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.2983,
+        "recall@100": 0.6959,
+        "mrr@10": 0.3102,
+        "mean_unjudged_in_top10": 8.447,
+        "mean_unjudged_in_top100": 96.12
+      },
+      "timing": {
+        "encode_s": 3565.2,
+        "search_s": 0.57
+      }
+    },
+    "te": {
+      "lang": "te",
+      "model_key": "LaBSE",
+      "model": "sentence-transformers/LaBSE",
+      "declares_language_support": true,
+      "coverage_confounded": false,
+      "declared_languages": 110,
+      "tokenizer_family": "LaBSE-501k",
+      "model_task": "bitext/similarity",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 768,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.2184,
+        "recall@100": 0.5828,
+        "mrr@10": 0.1874,
+        "mean_unjudged_in_top10": 9.577,
+        "mean_unjudged_in_top100": 99.13
+      },
+      "timing": {
+        "encode_s": 6456.9,
+        "search_s": 0.36
+      }
+    }
+  }
+}

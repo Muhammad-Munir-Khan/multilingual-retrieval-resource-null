@@ -1,0 +1,65 @@
+{
+  "experiment_id": "EXP-004-bm25",
+  "system": "bm25",
+  "updated_utc": "2026-08-11T15:08:22.899526+00:00",
+  "git_commit": "2efe420d874612dcc4af80ed2cc2b71b62cad75c",
+  "metrics_definition": {
+    "ndcg": "@10",
+    "recall": "@100",
+    "mrr": "@10",
+    "topk_retrieved": 100
+  },
+  "languages": {
+    "yo": {
+      "lang": "yo",
+      "system": "bm25",
+      "n_queries": 119,
+      "n_docs": 49043,
+      "aggregate": {
+        "ndcg@10": 0.3233,
+        "recall@100": 0.7409,
+        "mrr@10": 0.286
+      },
+      "timing": {
+        "index_s": 0.67,
+        "search_s": 9.2
+      },
+      "whitespace_tokenisation_valid": true,
+      "flag": null
+    },
+    "sw": {
+      "lang": "sw",
+      "system": "bm25",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "aggregate": {
+        "ndcg@10": 0.3618,
+        "recall@100": 0.7108,
+        "mrr@10": 0.3683
+      },
+      "timing": {
+        "index_s": 0.91,
+        "search_s": 23.47
+      },
+      "whitespace_tokenisation_valid": true,
+      "flag": null
+    },
+    "bn": {
+      "lang": "bn",
+      "system": "bm25",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "aggregate": {
+        "ndcg@10": 0.4434,
+        "recall@100": 0.8758,
+        "mrr@10": 0.458
+      },
+      "timing": {
+        "index_s": 1.51,
+        "search_s": 30.15
+      },
+      "whitespace_tokenisation_valid": true,
+      "flag": null
+    }
+  }
+}

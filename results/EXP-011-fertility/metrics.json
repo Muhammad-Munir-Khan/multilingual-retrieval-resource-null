@@ -1,0 +1,556 @@
+{
+  "experiment_id": "EXP-011",
+  "purpose": "tokenizer fertility / STRR predictors for H0b/H1b (protocol \u00a78)",
+  "updated_utc": "2026-08-12T05:55:38.198748+00:00",
+  "git_commit": "8f73173e1c76cecc36a7e7c9ed134ca854527f1f",
+  "seed": 20260811,
+  "n_docs_per_language": 2000,
+  "tokenizers": {
+    "XLM-R-250k": "intfloat/multilingual-e5-small",
+    "mBERT-119k": "bert-base-multilingual-cased",
+    "LaBSE-501k": "sentence-transformers/LaBSE"
+  },
+  "caveat": "fertility_tokens_per_word is NOT interpretable for zh/ja/th, which lack whitespace word boundaries; a 'word' there is a clause. tokens_per_char is well defined for every script and is the cross-language comparable measure. Using the per-word measure across unsegmented scripts would repeat the orthography-as-linguistics error caught in ISSUE-005.",
+  "languages": {
+    "yo": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 58153,
+          "n_chars": 272698,
+          "n_subword_tokens": 159084,
+          "fertility_tokens_per_word": 2.7356,
+          "strr_single_token_rate": 0.3273,
+          "tokens_per_char": 0.5834
+        },
+        "mBERT-119k": {
+          "n_words": 58153,
+          "n_chars": 272698,
+          "n_subword_tokens": 132588,
+          "fertility_tokens_per_word": 2.28,
+          "strr_single_token_rate": 0.4127,
+          "tokens_per_char": 0.4862
+        },
+        "LaBSE-501k": {
+          "n_words": 58153,
+          "n_chars": 272698,
+          "n_subword_tokens": 111259,
+          "fertility_tokens_per_word": 1.9132,
+          "strr_single_token_rate": 0.5553,
+          "tokens_per_char": 0.408
+        }
+      }
+    },
+    "sw": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 73517,
+          "n_chars": 395082,
+          "n_subword_tokens": 123379,
+          "fertility_tokens_per_word": 1.6782,
+          "strr_single_token_rate": 0.5769,
+          "tokens_per_char": 0.3123
+        },
+        "mBERT-119k": {
+          "n_words": 73517,
+          "n_chars": 395082,
+          "n_subword_tokens": 143814,
+          "fertility_tokens_per_word": 1.9562,
+          "strr_single_token_rate": 0.4728,
+          "tokens_per_char": 0.364
+        },
+        "LaBSE-501k": {
+          "n_words": 73517,
+          "n_chars": 395082,
+          "n_subword_tokens": 107492,
+          "fertility_tokens_per_word": 1.4621,
+          "strr_single_token_rate": 0.7001,
+          "tokens_per_char": 0.2721
+        }
+      }
+    },
+    "bn": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 114471,
+          "n_chars": 666093,
+          "n_subword_tokens": 263523,
+          "fertility_tokens_per_word": 2.3021,
+          "strr_single_token_rate": 0.3982,
+          "tokens_per_char": 0.3956
+        },
+        "mBERT-119k": {
+          "n_words": 114471,
+          "n_chars": 666093,
+          "n_subword_tokens": 334417,
+          "fertility_tokens_per_word": 2.9214,
+          "strr_single_token_rate": 0.3205,
+          "tokens_per_char": 0.5021
+        },
+        "LaBSE-501k": {
+          "n_words": 114471,
+          "n_chars": 666093,
+          "n_subword_tokens": 219014,
+          "fertility_tokens_per_word": 1.9133,
+          "strr_single_token_rate": 0.5583,
+          "tokens_per_char": 0.3288
+        }
+      }
+    },
+    "hi": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 139011,
+          "n_chars": 613799,
+          "n_subword_tokens": 222986,
+          "fertility_tokens_per_word": 1.6041,
+          "strr_single_token_rate": 0.6554,
+          "tokens_per_char": 0.3633
+        },
+        "mBERT-119k": {
+          "n_words": 139011,
+          "n_chars": 613799,
+          "n_subword_tokens": 290013,
+          "fertility_tokens_per_word": 2.0863,
+          "strr_single_token_rate": 0.5364,
+          "tokens_per_char": 0.4725
+        },
+        "LaBSE-501k": {
+          "n_words": 139011,
+          "n_chars": 613799,
+          "n_subword_tokens": 208044,
+          "fertility_tokens_per_word": 1.4966,
+          "strr_single_token_rate": 0.7257,
+          "tokens_per_char": 0.3389
+        }
+      }
+    },
+    "te": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 103780,
+          "n_chars": 699182,
+          "n_subword_tokens": 257373,
+          "fertility_tokens_per_word": 2.48,
+          "strr_single_token_rate": 0.327,
+          "tokens_per_char": 0.3681
+        },
+        "mBERT-119k": {
+          "n_words": 103780,
+          "n_chars": 699182,
+          "n_subword_tokens": 291670,
+          "fertility_tokens_per_word": 2.8105,
+          "strr_single_token_rate": 0.449,
+          "tokens_per_char": 0.4172
+        },
+        "LaBSE-501k": {
+          "n_words": 103780,
+          "n_chars": 699182,
+          "n_subword_tokens": 224668,
+          "fertility_tokens_per_word": 2.1648,
+          "strr_single_token_rate": 0.5093,
+          "tokens_per_char": 0.3213
+        }
+      }
+    },
+    "th": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": false,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 39352,
+          "n_chars": 703215,
+          "n_subword_tokens": 220004,
+          "fertility_tokens_per_word": 5.5907,
+          "strr_single_token_rate": 0.1948,
+          "tokens_per_char": 0.3129
+        },
+        "mBERT-119k": {
+          "n_words": 39352,
+          "n_chars": 703215,
+          "n_subword_tokens": 371104,
+          "fertility_tokens_per_word": 9.4304,
+          "strr_single_token_rate": 0.2943,
+          "tokens_per_char": 0.5277
+        },
+        "LaBSE-501k": {
+          "n_words": 39352,
+          "n_chars": 703215,
+          "n_subword_tokens": 302682,
+          "fertility_tokens_per_word": 7.6917,
+          "strr_single_token_rate": 0.2408,
+          "tokens_per_char": 0.4304
+        }
+      }
+    },
+    "id": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 102116,
+          "n_chars": 639631,
+          "n_subword_tokens": 161734,
+          "fertility_tokens_per_word": 1.5838,
+          "strr_single_token_rate": 0.6483,
+          "tokens_per_char": 0.2529
+        },
+        "mBERT-119k": {
+          "n_words": 102116,
+          "n_chars": 639631,
+          "n_subword_tokens": 172229,
+          "fertility_tokens_per_word": 1.6866,
+          "strr_single_token_rate": 0.6155,
+          "tokens_per_char": 0.2693
+        },
+        "LaBSE-501k": {
+          "n_words": 102116,
+          "n_chars": 639631,
+          "n_subword_tokens": 146633,
+          "fertility_tokens_per_word": 1.4359,
+          "strr_single_token_rate": 0.7265,
+          "tokens_per_char": 0.2292
+        }
+      }
+    },
+    "ko": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 80380,
+          "n_chars": 292933,
+          "n_subword_tokens": 215067,
+          "fertility_tokens_per_word": 2.6756,
+          "strr_single_token_rate": 0.2058,
+          "tokens_per_char": 0.7342
+        },
+        "mBERT-119k": {
+          "n_words": 80380,
+          "n_chars": 292933,
+          "n_subword_tokens": 225436,
+          "fertility_tokens_per_word": 2.8046,
+          "strr_single_token_rate": 0.1929,
+          "tokens_per_char": 0.7696
+        },
+        "LaBSE-501k": {
+          "n_words": 80380,
+          "n_chars": 292933,
+          "n_subword_tokens": 198425,
+          "fertility_tokens_per_word": 2.4686,
+          "strr_single_token_rate": 0.3054,
+          "tokens_per_char": 0.6774
+        }
+      }
+    },
+    "fi": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 86903,
+          "n_chars": 677713,
+          "n_subword_tokens": 196289,
+          "fertility_tokens_per_word": 2.2587,
+          "strr_single_token_rate": 0.3668,
+          "tokens_per_char": 0.2896
+        },
+        "mBERT-119k": {
+          "n_words": 86903,
+          "n_chars": 677713,
+          "n_subword_tokens": 220808,
+          "fertility_tokens_per_word": 2.5409,
+          "strr_single_token_rate": 0.3666,
+          "tokens_per_char": 0.3258
+        },
+        "LaBSE-501k": {
+          "n_words": 86903,
+          "n_chars": 677713,
+          "n_subword_tokens": 185429,
+          "fertility_tokens_per_word": 2.1337,
+          "strr_single_token_rate": 0.453,
+          "tokens_per_char": 0.2736
+        }
+      }
+    },
+    "ar": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 110494,
+          "n_chars": 542571,
+          "n_subword_tokens": 201210,
+          "fertility_tokens_per_word": 1.821,
+          "strr_single_token_rate": 0.4952,
+          "tokens_per_char": 0.3708
+        },
+        "mBERT-119k": {
+          "n_words": 110494,
+          "n_chars": 542571,
+          "n_subword_tokens": 237250,
+          "fertility_tokens_per_word": 2.1472,
+          "strr_single_token_rate": 0.4638,
+          "tokens_per_char": 0.4373
+        },
+        "LaBSE-501k": {
+          "n_words": 110494,
+          "n_chars": 542571,
+          "n_subword_tokens": 189555,
+          "fertility_tokens_per_word": 1.7155,
+          "strr_single_token_rate": 0.5926,
+          "tokens_per_char": 0.3494
+        }
+      }
+    },
+    "fa": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 100366,
+          "n_chars": 440712,
+          "n_subword_tokens": 157331,
+          "fertility_tokens_per_word": 1.5676,
+          "strr_single_token_rate": 0.64,
+          "tokens_per_char": 0.357
+        },
+        "mBERT-119k": {
+          "n_words": 100366,
+          "n_chars": 440712,
+          "n_subword_tokens": 176447,
+          "fertility_tokens_per_word": 1.758,
+          "strr_single_token_rate": 0.5792,
+          "tokens_per_char": 0.4004
+        },
+        "LaBSE-501k": {
+          "n_words": 100366,
+          "n_chars": 440712,
+          "n_subword_tokens": 147979,
+          "fertility_tokens_per_word": 1.4744,
+          "strr_single_token_rate": 0.7035,
+          "tokens_per_char": 0.3358
+        }
+      }
+    },
+    "zh": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": false,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 6032,
+          "n_chars": 246353,
+          "n_subword_tokens": 181612,
+          "fertility_tokens_per_word": 30.1081,
+          "strr_single_token_rate": 0.0816,
+          "tokens_per_char": 0.7372
+        },
+        "mBERT-119k": {
+          "n_words": 6032,
+          "n_chars": 246353,
+          "n_subword_tokens": 229411,
+          "fertility_tokens_per_word": 38.0323,
+          "strr_single_token_rate": 0.0938,
+          "tokens_per_char": 0.9312
+        },
+        "LaBSE-501k": {
+          "n_words": 6032,
+          "n_chars": 246353,
+          "n_subword_tokens": 228724,
+          "fertility_tokens_per_word": 37.9184,
+          "strr_single_token_rate": 0.1,
+          "tokens_per_char": 0.9284
+        }
+      }
+    },
+    "ja": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": false,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 6801,
+          "n_chars": 304819,
+          "n_subword_tokens": 201634,
+          "fertility_tokens_per_word": 29.6477,
+          "strr_single_token_rate": 0.096,
+          "tokens_per_char": 0.6615
+        },
+        "mBERT-119k": {
+          "n_words": 6801,
+          "n_chars": 304819,
+          "n_subword_tokens": 237554,
+          "fertility_tokens_per_word": 34.9293,
+          "strr_single_token_rate": 0.1088,
+          "tokens_per_char": 0.7793
+        },
+        "LaBSE-501k": {
+          "n_words": 6801,
+          "n_chars": 304819,
+          "n_subword_tokens": 235453,
+          "fertility_tokens_per_word": 34.6203,
+          "strr_single_token_rate": 0.1185,
+          "tokens_per_char": 0.7724
+        }
+      }
+    },
+    "ru": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 98748,
+          "n_chars": 623258,
+          "n_subword_tokens": 198060,
+          "fertility_tokens_per_word": 2.0057,
+          "strr_single_token_rate": 0.4598,
+          "tokens_per_char": 0.3178
+        },
+        "mBERT-119k": {
+          "n_words": 98748,
+          "n_chars": 623258,
+          "n_subword_tokens": 214491,
+          "fertility_tokens_per_word": 2.1721,
+          "strr_single_token_rate": 0.4876,
+          "tokens_per_char": 0.3441
+        },
+        "LaBSE-501k": {
+          "n_words": 98748,
+          "n_chars": 623258,
+          "n_subword_tokens": 188450,
+          "fertility_tokens_per_word": 1.9084,
+          "strr_single_token_rate": 0.544,
+          "tokens_per_char": 0.3024
+        }
+      }
+    },
+    "es": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 132490,
+          "n_chars": 676110,
+          "n_subword_tokens": 198801,
+          "fertility_tokens_per_word": 1.5005,
+          "strr_single_token_rate": 0.6837,
+          "tokens_per_char": 0.294
+        },
+        "mBERT-119k": {
+          "n_words": 132490,
+          "n_chars": 676110,
+          "n_subword_tokens": 194178,
+          "fertility_tokens_per_word": 1.4656,
+          "strr_single_token_rate": 0.7261,
+          "tokens_per_char": 0.2872
+        },
+        "LaBSE-501k": {
+          "n_words": 132490,
+          "n_chars": 676110,
+          "n_subword_tokens": 182915,
+          "fertility_tokens_per_word": 1.3806,
+          "strr_single_token_rate": 0.7556,
+          "tokens_per_char": 0.2705
+        }
+      }
+    },
+    "en": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 137466,
+          "n_chars": 712878,
+          "n_subword_tokens": 206117,
+          "fertility_tokens_per_word": 1.4994,
+          "strr_single_token_rate": 0.6791,
+          "tokens_per_char": 0.2891
+        },
+        "mBERT-119k": {
+          "n_words": 137466,
+          "n_chars": 712878,
+          "n_subword_tokens": 192691,
+          "fertility_tokens_per_word": 1.4017,
+          "strr_single_token_rate": 0.755,
+          "tokens_per_char": 0.2703
+        },
+        "LaBSE-501k": {
+          "n_words": 137466,
+          "n_chars": 712878,
+          "n_subword_tokens": 183845,
+          "fertility_tokens_per_word": 1.3374,
+          "strr_single_token_rate": 0.778,
+          "tokens_per_char": 0.2579
+        }
+      }
+    },
+    "de": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 115652,
+          "n_chars": 720234,
+          "n_subword_tokens": 205031,
+          "fertility_tokens_per_word": 1.7728,
+          "strr_single_token_rate": 0.5972,
+          "tokens_per_char": 0.2847
+        },
+        "mBERT-119k": {
+          "n_words": 115652,
+          "n_chars": 720234,
+          "n_subword_tokens": 197393,
+          "fertility_tokens_per_word": 1.7068,
+          "strr_single_token_rate": 0.6492,
+          "tokens_per_char": 0.2741
+        },
+        "LaBSE-501k": {
+          "n_words": 115652,
+          "n_chars": 720234,
+          "n_subword_tokens": 190034,
+          "fertility_tokens_per_word": 1.6432,
+          "strr_single_token_rate": 0.6572,
+          "tokens_per_char": 0.2639
+        }
+      }
+    },
+    "fr": {
+      "n_docs_sampled": 2000,
+      "whitespace_word_measure_valid": true,
+      "families": {
+        "XLM-R-250k": {
+          "n_words": 116869,
+          "n_chars": 609886,
+          "n_subword_tokens": 194866,
+          "fertility_tokens_per_word": 1.6674,
+          "strr_single_token_rate": 0.6335,
+          "tokens_per_char": 0.3195
+        },
+        "mBERT-119k": {
+          "n_words": 116869,
+          "n_chars": 609886,
+          "n_subword_tokens": 184056,
+          "fertility_tokens_per_word": 1.5749,
+          "strr_single_token_rate": 0.6966,
+          "tokens_per_char": 0.3018
+        },
+        "LaBSE-501k": {
+          "n_words": 116869,
+          "n_chars": 609886,
+          "n_subword_tokens": 174195,
+          "fertility_tokens_per_word": 1.4905,
+          "strr_single_token_rate": 0.7255,
+          "tokens_per_char": 0.2856
+        }
+      }
+    }
+  }
+}

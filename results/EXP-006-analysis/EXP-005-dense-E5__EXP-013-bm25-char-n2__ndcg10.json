@@ -1,0 +1,205 @@
+{
+  "experiment_id": "EXP-006",
+  "metric": "ndcg@10",
+  "bm25_source": "EXP-013-bm25-char-n2",
+  "dense_source": "EXP-005-dense-E5",
+  "seed": 20260811,
+  "n_bootstrap": 10000,
+  "updated_utc": "2026-08-13T09:33:43.699028+00:00",
+  "git_commit": "688c1b7c2e710d6202068e64eb2d4da34363edde",
+  "per_language": {
+    "ar": {
+      "n_queries": 300,
+      "mean_diff": 0.3628441889390244,
+      "ci95_low": 0.32313508991942885,
+      "ci95_high": 0.40238360179917737,
+      "boot_se": 0.020226724399570174,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.4918889942897035,
+      "dense_mean": 0.854733183228728
+    },
+    "bn": {
+      "n_queries": 300,
+      "mean_diff": 0.20741087359927776,
+      "ci95_low": 0.16889378489324075,
+      "ci95_high": 0.24652369845929506,
+      "boot_se": 0.019937183671137802,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.546653095965021,
+      "dense_mean": 0.7540639695642987
+    },
+    "de": {
+      "n_queries": 300,
+      "mean_diff": 0.45728548339840963,
+      "ci95_low": 0.41527382604398133,
+      "ci95_high": 0.49952881427453116,
+      "boot_se": 0.02162333767136624,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.2886869656231833,
+      "dense_mean": 0.7459724490215928
+    },
+    "en": {
+      "n_queries": 300,
+      "mean_diff": 0.36224429550103576,
+      "ci95_low": 0.32170580878068006,
+      "ci95_high": 0.4035929163226355,
+      "boot_se": 0.020949809742164132,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.44442812838280643,
+      "dense_mean": 0.8066724238838422
+    },
+    "es": {
+      "n_queries": 300,
+      "mean_diff": 0.5036273593980701,
+      "ci95_low": 0.4649483353918148,
+      "ci95_high": 0.5414419578843916,
+      "boot_se": 0.01940330447733828,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.3181589897329247,
+      "dense_mean": 0.8217863491309947
+    },
+    "fa": {
+      "n_queries": 300,
+      "mean_diff": 0.381159597144434,
+      "ci95_low": 0.33833364647377323,
+      "ci95_high": 0.4235668685320431,
+      "boot_se": 0.021868584471029427,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.3585147550494553,
+      "dense_mean": 0.7396743521938892
+    },
+    "fi": {
+      "n_queries": 300,
+      "mean_diff": 0.3746582146357914,
+      "ci95_low": 0.32913124575834346,
+      "ci95_high": 0.41934364412093017,
+      "boot_se": 0.02304913967305383,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.4718403121071632,
+      "dense_mean": 0.8464985267429546
+    },
+    "fr": {
+      "n_queries": 300,
+      "mean_diff": 0.41265994210019213,
+      "ci95_low": 0.36798937156295974,
+      "ci95_high": 0.45575825074119974,
+      "boot_se": 0.022428698021305513,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.29342391972276866,
+      "dense_mean": 0.7060838618229608
+    },
+    "hi": {
+      "n_queries": 300,
+      "mean_diff": 0.27424611581264713,
+      "ci95_low": 0.2274153763287463,
+      "ci95_high": 0.32050293795663104,
+      "boot_se": 0.023596390288307147,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.3865280132585995,
+      "dense_mean": 0.6607741290712466
+    },
+    "id": {
+      "n_queries": 300,
+      "mean_diff": 0.413816420061835,
+      "ci95_low": 0.3690333905455969,
+      "ci95_high": 0.45730780335689375,
+      "boot_se": 0.02245404068856502,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.32262518737080115,
+      "dense_mean": 0.7364416074326363
+    },
+    "ja": {
+      "n_queries": 300,
+      "mean_diff": 0.20128144259702027,
+      "ci95_low": 0.16468765753881573,
+      "ci95_high": 0.23680163391408973,
+      "boot_se": 0.01846222182948259,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.5900218138563038,
+      "dense_mean": 0.7913032564533241
+    },
+    "ko": {
+      "n_queries": 213,
+      "mean_diff": 0.20449751959921916,
+      "ci95_low": 0.15983161980438748,
+      "ci95_high": 0.2497900608378842,
+      "boot_se": 0.022951268300871484,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.5361012458042157,
+      "dense_mean": 0.7405987654034348
+    },
+    "ru": {
+      "n_queries": 300,
+      "mean_diff": 0.43779685200306334,
+      "ci95_low": 0.398294666178281,
+      "ci95_high": 0.4775577213929787,
+      "boot_se": 0.020446917461789515,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.36133933005909863,
+      "dense_mean": 0.799136182062162
+    },
+    "sw": {
+      "n_queries": 300,
+      "mean_diff": 0.4580046101206912,
+      "ci95_low": 0.4103237180802654,
+      "ci95_high": 0.5042687916275411,
+      "boot_se": 0.024090531527512393,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.2947039303317579,
+      "dense_mean": 0.7527085404524491
+    },
+    "te": {
+      "n_queries": 300,
+      "mean_diff": 0.37772600724172717,
+      "ci95_low": 0.3277215082635427,
+      "ci95_high": 0.4269887870336369,
+      "boot_se": 0.025232691533321156,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.5507412393597962,
+      "dense_mean": 0.9284672466015232
+    },
+    "th": {
+      "n_queries": 300,
+      "mean_diff": 0.2875033758620427,
+      "ci95_low": 0.2484229107218309,
+      "ci95_high": 0.32653885850656716,
+      "boot_se": 0.020212428248207393,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.5499047580777221,
+      "dense_mean": 0.8374081339397649
+    },
+    "yo": {
+      "n_queries": 119,
+      "mean_diff": 0.05528736500841096,
+      "ci95_low": -0.029776988818344084,
+      "ci95_high": 0.13792974940859856,
+      "boot_se": 0.04303851182605367,
+      "ci_excludes_zero": false,
+      "bm25_mean": 0.39410552764666074,
+      "dense_mean": 0.4493928926550717
+    },
+    "zh": {
+      "n_queries": 300,
+      "mean_diff": 0.3162672333277468,
+      "ci95_low": 0.274147758740858,
+      "ci95_high": 0.359080747191653,
+      "boot_se": 0.021708629919932786,
+      "ci_excludes_zero": true,
+      "bm25_mean": 0.39494674948468805,
+      "dense_mean": 0.711213982812435
+    }
+  },
+  "pooled_random_effects": {
+    "k_languages": 18,
+    "pooled_effect": 0.33995926420034256,
+    "se": 0.024297603895148328,
+    "ci95_low": 0.2923359605658518,
+    "ci95_high": 0.3875825678348333,
+    "tau2": 0.010085774789859534,
+    "Q": 372.0270446822273,
+    "df": 17,
+    "I2": 0.9543043973737962,
+    "heterogeneity_note": "High I2 means the effect differs across languages, which is itself the H1a finding rather than a nuisance. Do not read the pooled value alone."
+  },
+  "interpretation_guard": "Associational only. Encoders differ in training data and objective as well as tokenizer, so no causal attribution is licensed (constraint C1)."
+}

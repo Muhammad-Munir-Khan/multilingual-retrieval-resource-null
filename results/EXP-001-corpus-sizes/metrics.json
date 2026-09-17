@@ -1,0 +1,88 @@
+{
+  "experiment_id": "EXP-001",
+  "purpose": "verified MIRACL per-language corpus sizes; replaces UNVERIFIED placeholders",
+  "source": "https://datasets-server.huggingface.co/size?dataset=miracl/miracl-corpus",
+  "retrieved_utc": "2026-08-11T14:44:45.857088+00:00",
+  "git_commit": "b1a106e67b9724adde8510b4e403c53c8e84f5d2",
+  "encode_rate_passages_per_s_from_EXP000": 9.47,
+  "languages": {
+    "yo": {
+      "passages": 49043,
+      "projected_encode_hours_one_model": 1.44
+    },
+    "sw": {
+      "passages": 131924,
+      "projected_encode_hours_one_model": 3.87
+    },
+    "bn": {
+      "passages": 297265,
+      "projected_encode_hours_one_model": 8.72
+    },
+    "hi": {
+      "passages": 506264,
+      "projected_encode_hours_one_model": 14.85
+    },
+    "te": {
+      "passages": 518079,
+      "projected_encode_hours_one_model": 15.2
+    },
+    "th": {
+      "passages": 542166,
+      "projected_encode_hours_one_model": 15.9
+    },
+    "id": {
+      "passages": 1446315,
+      "projected_encode_hours_one_model": 42.42
+    },
+    "ko": {
+      "passages": 1486752,
+      "projected_encode_hours_one_model": 43.61
+    },
+    "fi": {
+      "passages": 1883509,
+      "projected_encode_hours_one_model": 55.25
+    },
+    "ar": {
+      "passages": 2061414,
+      "projected_encode_hours_one_model": 60.47
+    },
+    "fa": {
+      "passages": 2207172,
+      "projected_encode_hours_one_model": 64.74
+    },
+    "zh": {
+      "passages": 4934368,
+      "projected_encode_hours_one_model": 144.74
+    },
+    "ja": {
+      "passages": 6953614,
+      "projected_encode_hours_one_model": 203.97
+    },
+    "ru": {
+      "passages": 7954000,
+      "projected_encode_hours_one_model": 233.31
+    },
+    "es": {
+      "passages": 10373953,
+      "projected_encode_hours_one_model": 304.29
+    },
+    "en": {
+      "passages": 11254000,
+      "projected_encode_hours_one_model": 330.11
+    },
+    "de": {
+      "passages": 11315000,
+      "projected_encode_hours_one_model": 331.9
+    },
+    "fr": {
+      "passages": 13306000,
+      "projected_encode_hours_one_model": 390.3
+    }
+  },
+  "totals": {
+    "n_languages": 18,
+    "total_passages": 77220838,
+    "projected_hours_all_langs_one_model": 2265.1,
+    "size_ratio_largest_to_smallest": 271.3
+  }
+}

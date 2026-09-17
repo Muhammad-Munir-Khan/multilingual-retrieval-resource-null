@@ -1,0 +1,18 @@
+{
+  "lang": "te",
+  "built_utc": "2026-08-11T15:06:43.797953+00:00",
+  "git_commit": "2efe420d874612dcc4af80ed2cc2b71b62cad75c",
+  "seed": 20260811,
+  "q_max": 300,
+  "n_target": 49043,
+  "n_actual": 49043,
+  "n_queries": 300,
+  "n_judged_docs_expected": 583,
+  "n_judged_docs_found": 583,
+  "n_judged_docs_missing": 0,
+  "missing_judged_sample": [],
+  "judged_fraction": 0.0119,
+  "corpus_total_docs_streamed": 518079,
+  "corpus_shards": 2,
+  "docid_sha256": "d38cd93f3801226d75f285d294fe69bee0e21ff60920f181d574876fbb95dfe2"
+}

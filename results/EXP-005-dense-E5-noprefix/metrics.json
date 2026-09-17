@@ -1,0 +1,64 @@
+{
+  "experiment_id": "EXP-005-dense-E5-noprefix",
+  "model": "intfloat/multilingual-e5-small",
+  "updated_utc": "2026-08-12T14:19:03.917157+00:00",
+  "git_commit": "5092bddda0785043664784f21b98a9a0b383e8dc",
+  "languages": {
+    "te": {
+      "lang": "te",
+      "model_key": "E5-noprefix",
+      "model": "intfloat/multilingual-e5-small",
+      "declares_language_support": true,
+      "coverage_confounded": false,
+      "declared_languages": 94,
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 384,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.9288,
+        "recall@100": 0.9917,
+        "mrr@10": 0.9166,
+        "mean_unjudged_in_top10": 8.667,
+        "mean_unjudged_in_top100": 98.35
+      },
+      "timing": {
+        "encode_s": 3005.1,
+        "search_s": 0.25
+      }
+    },
+    "hi": {
+      "lang": "hi",
+      "model_key": "E5-noprefix",
+      "model": "intfloat/multilingual-e5-small",
+      "declares_language_support": true,
+      "coverage_confounded": false,
+      "declared_languages": 94,
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 384,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.653,
+        "recall@100": 0.9722,
+        "mrr@10": 0.6553,
+        "mean_unjudged_in_top10": 4.443,
+        "mean_unjudged_in_top100": 91.31
+      },
+      "timing": {
+        "encode_s": 2393.9,
+        "search_s": 0.25
+      }
+    }
+  }
+}

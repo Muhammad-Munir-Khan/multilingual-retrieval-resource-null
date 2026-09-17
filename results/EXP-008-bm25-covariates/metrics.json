@@ -1,0 +1,182 @@
+{
+  "experiment_id": "EXP-008",
+  "purpose": "BM25-only covariate structure; descriptive per protocol s7",
+  "updated_utc": "2026-08-11T17:25:51.824001+00:00",
+  "git_commit": "afcb43afc88bf6aa58e8dec3c4e693f49e746dcc",
+  "n_languages": 18,
+  "languages": [
+    {
+      "lang": "yo",
+      "ndcg10": 0.517,
+      "recall100": 0.9062,
+      "unjudged10": 7.353,
+      "cc100_mb": 1.1,
+      "log10_mb": 0.041,
+      "n_queries": 119
+    },
+    {
+      "lang": "sw",
+      "ndcg10": 0.4933,
+      "recall100": 0.878,
+      "unjudged10": 7.147,
+      "cc100_mb": 332,
+      "log10_mb": 2.521,
+      "n_queries": 300
+    },
+    {
+      "lang": "bn",
+      "ndcg10": 0.5444,
+      "recall100": 0.9337,
+      "unjudged10": 5.17,
+      "cc100_mb": 860,
+      "log10_mb": 2.934,
+      "n_queries": 300
+    },
+    {
+      "lang": "te",
+      "ndcg10": 0.6412,
+      "recall100": 0.9267,
+      "unjudged10": 9.013,
+      "cc100_mb": 536,
+      "log10_mb": 2.729,
+      "n_queries": 300
+    },
+    {
+      "lang": "hi",
+      "ndcg10": 0.4887,
+      "recall100": 0.9152,
+      "unjudged10": 5.233,
+      "cc100_mb": 2560,
+      "log10_mb": 3.408,
+      "n_queries": 300
+    },
+    {
+      "lang": "th",
+      "ndcg10": 0.541,
+      "recall100": 0.9513,
+      "unjudged10": 5.017,
+      "cc100_mb": 8909,
+      "log10_mb": 3.95,
+      "n_queries": 300
+    },
+    {
+      "lang": "id",
+      "ndcg10": 0.5593,
+      "recall100": 0.9245,
+      "unjudged10": 5.0,
+      "cc100_mb": 36864,
+      "log10_mb": 4.567,
+      "n_queries": 300
+    },
+    {
+      "lang": "ko",
+      "ndcg10": 0.4051,
+      "recall100": 0.8035,
+      "unjudged10": 5.211,
+      "cc100_mb": 14336,
+      "log10_mb": 4.156,
+      "n_queries": 213
+    },
+    {
+      "lang": "fa",
+      "ndcg10": 0.5056,
+      "recall100": 0.9106,
+      "unjudged10": 5.137,
+      "cc100_mb": 20480,
+      "log10_mb": 4.311,
+      "n_queries": 300
+    },
+    {
+      "lang": "fi",
+      "ndcg10": 0.6999,
+      "recall100": 0.9653,
+      "unjudged10": 4.397,
+      "cc100_mb": 15360,
+      "log10_mb": 4.186,
+      "n_queries": 300
+    },
+    {
+      "lang": "ar",
+      "ndcg10": 0.6238,
+      "recall100": 0.9752,
+      "unjudged10": 4.333,
+      "cc100_mb": 5530,
+      "log10_mb": 3.743,
+      "n_queries": 300
+    },
+    {
+      "lang": "zh",
+      "ndcg10": 0.1922,
+      "recall100": 0.3776,
+      "unjudged10": 7.05,
+      "cc100_mb": 14336,
+      "log10_mb": 4.156,
+      "n_queries": 300
+    },
+    {
+      "lang": "ja",
+      "ndcg10": 0.4657,
+      "recall100": 0.8516,
+      "unjudged10": 5.143,
+      "cc100_mb": 15360,
+      "log10_mb": 4.186,
+      "n_queries": 300
+    },
+    {
+      "lang": "ru",
+      "ndcg10": 0.5189,
+      "recall100": 0.8871,
+      "unjudged10": 4.423,
+      "cc100_mb": 47104,
+      "log10_mb": 4.673,
+      "n_queries": 300
+    },
+    {
+      "lang": "es",
+      "ndcg10": 0.5963,
+      "recall100": 0.9226,
+      "unjudged10": 3.643,
+      "cc100_mb": 14336,
+      "log10_mb": 4.156,
+      "n_queries": 300
+    },
+    {
+      "lang": "en",
+      "ndcg10": 0.5904,
+      "recall100": 0.9631,
+      "unjudged10": 1.997,
+      "cc100_mb": 83968,
+      "log10_mb": 4.924,
+      "n_queries": 300
+    },
+    {
+      "lang": "de",
+      "ndcg10": 0.4856,
+      "recall100": 0.9061,
+      "unjudged10": 4.093,
+      "cc100_mb": 18432,
+      "log10_mb": 4.266,
+      "n_queries": 300
+    },
+    {
+      "lang": "fr",
+      "ndcg10": 0.4096,
+      "recall100": 0.9133,
+      "unjudged10": 3.383,
+      "cc100_mb": 14336,
+      "log10_mb": 4.156,
+      "n_queries": 300
+    }
+  ],
+  "spearman": {
+    "unjudged10_vs_log_resource": -0.6597,
+    "ndcg10_vs_log_resource": -0.0594,
+    "ndcg10_vs_unjudged10": -0.2363
+  },
+  "interpretation": {
+    "DESCRIPTIVE_ONLY": "n=18 languages. Protocol s7 forbids treating these as inferential or causal.",
+    "pool_bias": "unjudged@10 correlates strongly negatively with resource volume (rho -0.660): low-resource languages have far more of their top-10 unjudged, so their nDCG is deflated by a benchmark property, not a system property. ISSUE-007.",
+    "reference_validity": "BM25 nDCG@10 shows essentially NO association with pretraining resource volume (rho -0.059). This is the behaviour the identification strategy assumes: BM25 has no pretrained parameters, so it should not track pretraining volume. Measured rather than assumed.",
+    "consequence": "If a dense encoder DOES show a resource association, that contrast is informative precisely because the pretraining-free reference does not. It does not by itself license causal attribution."
+  }
+}

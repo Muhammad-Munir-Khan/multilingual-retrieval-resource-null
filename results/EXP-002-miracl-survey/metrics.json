@@ -1,0 +1,213 @@
+{
+  "experiment_id": "EXP-002",
+  "purpose": "fix language set on evidence before pre-registering the protocol",
+  "retrieved_utc": "2026-08-11T14:53:49.006197+00:00",
+  "git_commit": "e50806af0e9f32ddb2e4b0700977cd69de09ef5f",
+  "encode_rate_passages_per_s": 9.62,
+  "languages": [
+    {
+      "lang": "yo",
+      "corpus_compressed_bytes": 3022542,
+      "corpus_shards": 1,
+      "corpus_gb": 0.0,
+      "dev_queries": 119,
+      "qrels_lines": 1188,
+      "positive_judgments": 144,
+      "judged_per_query": 9.98,
+      "positives_per_query": 1.21
+    },
+    {
+      "lang": "sw",
+      "corpus_compressed_bytes": 10199394,
+      "corpus_shards": 1,
+      "corpus_gb": 0.01,
+      "dev_queries": 482,
+      "qrels_lines": 5092,
+      "positive_judgments": 910,
+      "judged_per_query": 10.56,
+      "positives_per_query": 1.89
+    },
+    {
+      "lang": "bn",
+      "corpus_compressed_bytes": 59713182,
+      "corpus_shards": 1,
+      "corpus_gb": 0.06,
+      "dev_queries": 411,
+      "qrels_lines": 4206,
+      "positive_judgments": 863,
+      "judged_per_query": 10.23,
+      "positives_per_query": 2.1
+    },
+    {
+      "lang": "hi",
+      "corpus_compressed_bytes": 96812097,
+      "corpus_shards": 2,
+      "corpus_gb": 0.1,
+      "dev_queries": 350,
+      "qrels_lines": 3494,
+      "positive_judgments": 752,
+      "judged_per_query": 9.98,
+      "positives_per_query": 2.15
+    },
+    {
+      "lang": "te",
+      "corpus_compressed_bytes": 72312363,
+      "corpus_shards": 2,
+      "corpus_gb": 0.07,
+      "dev_queries": 828,
+      "qrels_lines": 1606,
+      "positive_judgments": 854,
+      "judged_per_query": 1.94,
+      "positives_per_query": 1.03
+    },
+    {
+      "lang": "th",
+      "corpus_compressed_bytes": 109637414,
+      "corpus_shards": 2,
+      "corpus_gb": 0.11,
+      "dev_queries": 733,
+      "qrels_lines": 7573,
+      "positive_judgments": 1343,
+      "judged_per_query": 10.33,
+      "positives_per_query": 1.83
+    },
+    {
+      "lang": "id",
+      "corpus_compressed_bytes": 169583618,
+      "corpus_shards": 3,
+      "corpus_gb": 0.17,
+      "dev_queries": 960,
+      "qrels_lines": 9668,
+      "positive_judgments": 3088,
+      "judged_per_query": 10.07,
+      "positives_per_query": 3.22
+    },
+    {
+      "lang": "ko",
+      "corpus_compressed_bytes": 225970548,
+      "corpus_shards": 3,
+      "corpus_gb": 0.23,
+      "dev_queries": 213,
+      "qrels_lines": 3057,
+      "positive_judgments": 547,
+      "judged_per_query": 14.35,
+      "positives_per_query": 2.57
+    },
+    {
+      "lang": "fi",
+      "corpus_compressed_bytes": 270046134,
+      "corpus_shards": 4,
+      "corpus_gb": 0.27,
+      "dev_queries": 1271,
+      "qrels_lines": 12008,
+      "positive_judgments": 2447,
+      "judged_per_query": 9.45,
+      "positives_per_query": 1.93
+    },
+    {
+      "lang": "ar",
+      "corpus_compressed_bytes": 319972345,
+      "corpus_shards": 5,
+      "corpus_gb": 0.32,
+      "dev_queries": 2896,
+      "qrels_lines": 29197,
+      "positive_judgments": 5658,
+      "judged_per_query": 10.08,
+      "positives_per_query": 1.95
+    },
+    {
+      "lang": "fa",
+      "corpus_compressed_bytes": 269762830,
+      "corpus_shards": 5,
+      "corpus_gb": 0.27,
+      "dev_queries": 632,
+      "qrels_lines": 6571,
+      "positive_judgments": 1314,
+      "judged_per_query": 10.4,
+      "positives_per_query": 2.08
+    },
+    {
+      "lang": "zh",
+      "corpus_compressed_bytes": 733255826,
+      "corpus_shards": 10,
+      "corpus_gb": 0.73,
+      "dev_queries": 393,
+      "qrels_lines": 3928,
+      "positive_judgments": 994,
+      "judged_per_query": 9.99,
+      "positives_per_query": 2.53
+    },
+    {
+      "lang": "ja",
+      "corpus_compressed_bytes": 1065120400,
+      "corpus_shards": 14,
+      "corpus_gb": 1.07,
+      "dev_queries": 860,
+      "qrels_lines": 8354,
+      "positive_judgments": 1790,
+      "judged_per_query": 9.71,
+      "positives_per_query": 2.08
+    },
+    {
+      "lang": "ru",
+      "corpus_compressed_bytes": 1575287888,
+      "corpus_shards": 20,
+      "corpus_gb": 1.58,
+      "dev_queries": 1252,
+      "qrels_lines": 13100,
+      "positive_judgments": 3560,
+      "judged_per_query": 10.46,
+      "positives_per_query": 2.84
+    },
+    {
+      "lang": "es",
+      "corpus_compressed_bytes": 1595387939,
+      "corpus_shards": 21,
+      "corpus_gb": 1.6,
+      "dev_queries": 648,
+      "qrels_lines": 6443,
+      "positive_judgments": 2987,
+      "judged_per_query": 9.94,
+      "positives_per_query": 4.61
+    },
+    {
+      "lang": "en",
+      "corpus_compressed_bytes": 5060264106,
+      "corpus_shards": 66,
+      "corpus_gb": 5.06,
+      "dev_queries": 799,
+      "qrels_lines": 8350,
+      "positive_judgments": 2326,
+      "judged_per_query": 10.45,
+      "positives_per_query": 2.91
+    },
+    {
+      "lang": "de",
+      "corpus_compressed_bytes": 2629280857,
+      "corpus_shards": 32,
+      "corpus_gb": 2.63,
+      "dev_queries": 305,
+      "qrels_lines": 3144,
+      "positive_judgments": 811,
+      "judged_per_query": 10.31,
+      "positives_per_query": 2.66
+    },
+    {
+      "lang": "fr",
+      "corpus_compressed_bytes": 1911100927,
+      "corpus_shards": 30,
+      "corpus_gb": 1.91,
+      "dev_queries": 343,
+      "qrels_lines": 3429,
+      "positive_judgments": 731,
+      "judged_per_query": 10.0,
+      "positives_per_query": 2.13
+    }
+  ],
+  "summary": {
+    "n_languages_with_dev": 18,
+    "min_dev_queries": 119,
+    "max_dev_queries": 2896,
+    "total_corpus_gb": 16.18
+  }
+}

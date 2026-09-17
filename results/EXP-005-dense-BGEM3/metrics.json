@@ -1,0 +1,120 @@
+{
+  "experiment_id": "EXP-005-dense-BGEM3",
+  "model": "BAAI/bge-m3",
+  "updated_utc": "2026-08-13T09:10:11.409140+00:00",
+  "git_commit": "d8abd05a755f4b8f17674da1df88fdfc7ad8d6df",
+  "languages": {
+    "yo": {
+      "lang": "yo",
+      "model_key": "BGEM3",
+      "model": "BAAI/bge-m3",
+      "declares_language_support": "UNDETERMINED",
+      "coverage_confounded": "UNDETERMINED",
+      "declared_languages": "UNVERIFIED (card claims 100, not enumerated)",
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 119,
+      "n_docs": 49043,
+      "embedding_dim": 1024,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.7074,
+        "recall@100": 0.9594,
+        "mrr@10": 0.6758,
+        "mean_unjudged_in_top10": 7.286,
+        "mean_unjudged_in_top100": 95.61
+      },
+      "timing": {
+        "encode_s": 0.1,
+        "search_s": 0.14
+      }
+    },
+    "sw": {
+      "lang": "sw",
+      "model_key": "BGEM3",
+      "model": "BAAI/bge-m3",
+      "declares_language_support": "UNDETERMINED",
+      "coverage_confounded": "UNDETERMINED",
+      "declared_languages": "UNVERIFIED (card claims 100, not enumerated)",
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 1024,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.7778,
+        "recall@100": 0.9648,
+        "mrr@10": 0.7992,
+        "mean_unjudged_in_top10": 6.56,
+        "mean_unjudged_in_top100": 93.76
+      },
+      "timing": {
+        "encode_s": 0.1,
+        "search_s": 0.39
+      }
+    },
+    "te": {
+      "lang": "te",
+      "model_key": "BGEM3",
+      "model": "BAAI/bge-m3",
+      "declares_language_support": "UNDETERMINED",
+      "coverage_confounded": "UNDETERMINED",
+      "declared_languages": "UNVERIFIED (card claims 100, not enumerated)",
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 1024,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.9162,
+        "recall@100": 0.9967,
+        "mrr@10": 0.8991,
+        "mean_unjudged_in_top10": 8.713,
+        "mean_unjudged_in_top100": 98.38
+      },
+      "timing": {
+        "encode_s": 0.1,
+        "search_s": 0.39
+      }
+    },
+    "en": {
+      "lang": "en",
+      "model_key": "BGEM3",
+      "model": "BAAI/bge-m3",
+      "declares_language_support": "UNDETERMINED",
+      "coverage_confounded": "UNDETERMINED",
+      "declared_languages": "UNVERIFIED (card claims 100, not enumerated)",
+      "tokenizer_family": "XLM-R-250k",
+      "model_task": "retrieval",
+      "query_prefix": "",
+      "doc_prefix": "",
+      "n_queries": 300,
+      "n_docs": 49043,
+      "embedding_dim": 1024,
+      "max_len": 256,
+      "batch_size": 16,
+      "aggregate": {
+        "ndcg@10": 0.7691,
+        "recall@100": 0.9938,
+        "mrr@10": 0.7883,
+        "mean_unjudged_in_top10": 2.423,
+        "mean_unjudged_in_top100": 90.31
+      },
+      "timing": {
+        "encode_s": 17827.0,
+        "search_s": 0.35
+      }
+    }
+  }
+}
